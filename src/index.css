@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Salsa&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.site-title {
+  font-family: "Salsa", cursive;
+}
+
+a {
+  font-weight: 600;
+}
+.menu li a:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+  text-decoration: underline;
+}
+
+a.active {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: #e9a55c !important;
+  font-weight: 700;
+}
+
+/* font-family: 'Kalam', cursive;
+font-family: 'Marhey', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Salsa', cursive;
+font-family: 'Young Serif', serif; */

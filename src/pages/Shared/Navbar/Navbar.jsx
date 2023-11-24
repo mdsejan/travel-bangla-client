@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { ThemeContext } from "../../../providers/ThemeProvider";
-// import { FaEarthAsia } from "react-icons/fa6";
 
 const Navbar = () => {
   const { user, logOut } = useContext(ThemeContext);
@@ -101,12 +100,14 @@ const Navbar = () => {
         <div className="navbar-end">
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full border-4 border-b-yellow-500 border-t-yellow-800 border-r-yellow-500 border-l-yellow-800">
-                <img
-                  alt="..."
-                  src="https://i.pinimg.com/564x/b5/24/54/b5245443607286b60ef7bedd08ce1b32.jpg"
-                  className="w-full object-cover"
-                />
+              <div className="w-14 rounded-full ">
+                {user && (
+                  <img
+                    alt={user?.displayName}
+                    src={user?.photoURL}
+                    className="w-full object-cover"
+                  />
+                )}
               </div>
             </label>
             {user && (

@@ -17,7 +17,7 @@ export const ThemeContext = createContext(null);
 
 const ThemeProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   //   const axiosPublic = useAxiosPublic();
 
   const createUser = (email, password) => {
@@ -42,6 +42,7 @@ const ThemeProvider = ({ children }) => {
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
+      setLoading(false);
       //   if (currentUser) {
       //     // get tocken and store client
       //     const userInfo = { email: currentUser.email };

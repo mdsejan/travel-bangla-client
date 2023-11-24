@@ -1,14 +1,14 @@
-// import { useContext } from "react";
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-// import { ThemeContext } from "../../providers/ThemeProvider";
+import { ThemeContext } from "../../../providers/ThemeProvider";
 // import { FaEarthAsia } from "react-icons/fa6";
 
 const Navbar = () => {
-  // const { user, logOut } = useContext(ThemeContext);
+  const { user, logOut } = useContext(ThemeContext);
 
-  // const handleLogOut = () => {
-  //   logOut().then();
-  // };
+  const handleLogOut = () => {
+    logOut().then();
+  };
 
   const navLinks = (
     <>
@@ -27,11 +27,14 @@ const Navbar = () => {
           Contact Us
         </NavLink>
       </li>
-      <li>
-        <NavLink to="/login" className="mr-2">
-          Login
-        </NavLink>
-      </li>
+      {!user && (
+        <li>
+          <NavLink to="/login" className="mr-2">
+            Login
+          </NavLink>
+        </li>
+      )}
+
       {/* {!user ? (
         <li>
           <NavLink to="/login" className="mr-2">
@@ -106,20 +109,22 @@ const Navbar = () => {
                 />
               </div>
             </label>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a className="justify-between">Profile</a>
-              </li>
-              <li>
-                <a>Settings</a>
-              </li>
-              <li>
-                <a>Logout</a>
-              </li>
-            </ul>
+            {user && (
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <span className="justify-between">{user?.displayName}</span>
+                </li>
+                <li>
+                  <span>{user?.email}</span>
+                </li>
+                <li>
+                  <a onClick={handleLogOut}>Logout</a>
+                </li>
+              </ul>
+            )}
           </div>
         </div>
         <div className="dropdown dropdown-end">

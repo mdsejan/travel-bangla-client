@@ -1,9 +1,8 @@
-import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { ThemeContext } from "../../../providers/ThemeProvider";
+import useAuth from "../../../hooks/useAuth";
 
 const Navbar = () => {
-  const { user, logOut } = useContext(ThemeContext);
+  const { user, logOut } = useAuth();
 
   const handleLogOut = () => {
     logOut().then();
@@ -87,7 +86,7 @@ const Navbar = () => {
           >
             <div className="flex items-center justify-center w-9 h-9 rounded-full ">
               {/* <FaEarthAsia className="text-white text-2xl bg-[#e9a55c]" /> */}
-              <img src="/public/tourism.png" alt="logo" />
+              <img src="https://i.ibb.co/1LkKBCY/tourism.png" alt="logo" />
             </div>
             <span className="self-center text-2xl font-semibold ml-2 site-title">
               TravelBangla
@@ -120,6 +119,11 @@ const Navbar = () => {
                 </li>
                 <li>
                   <span>{user?.email}</span>
+                </li>
+                <li>
+                  <NavLink to="/dashboard" className="mr-2">
+                    Dashboard
+                  </NavLink>
                 </li>
                 <li>
                   <a onClick={handleLogOut}>Logout</a>

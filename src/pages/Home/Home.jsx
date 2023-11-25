@@ -1,7 +1,10 @@
+import Banner from "./Banner/Banner";
+
 const Home = () => {
   return (
-    <div className="min-h-screen max-w-screen-2xl mx-auto">
-      <h2>Home</h2>
+    <div>
+      <Banner></Banner>
+      <div className="min-h-[20vh]"></div>
     </div>
   );
 };

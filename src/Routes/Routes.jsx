@@ -6,6 +6,11 @@ import Register from "../pages/Register/Register";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import PrivateRoute from "./PrivateRoute";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import AdminHome from "../pages/Dashboard/AdminDashboard/AdminHome";
+import MyProfile from "../pages/Dashboard/AdminDashboard/MyProfile/MyProfile";
+import AddPackage from "../pages/Dashboard/AdminDashboard/AddPackage/AddPackage";
+import Dashboard from "../pages/Layout/Dashboard";
+import ManageUsers from "../pages/Dashboard/AdminDashboard/ManageUsers/ManageUsers";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +36,30 @@ const router = createBrowserRouter([
       },
     ],
   },
+
+  {
+    path: "dashboard",
+    element: <Dashboard></Dashboard>,
+    children: [
+      {
+        path: "adminHome",
+        element: <AdminHome></AdminHome>,
+      },
+      {
+        path: "myProfile",
+        element: <MyProfile></MyProfile>,
+      },
+      {
+        path: "addPackage",
+        element: <AddPackage></AddPackage>,
+      },
+      {
+        path: "manageUsers",
+        element: <ManageUsers></ManageUsers>,
+      },
+    ],
+  },
+
   {
     path: "login",
     element: <Login></Login>,

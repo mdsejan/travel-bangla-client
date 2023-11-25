@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="divide-y bg-[#F2E5D7] text-black">
+    <footer className="divide-y bg-[#E1ECEB] text-black">
       <div className="max-w-screen-2xl px-4 flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
         <div className="lg:w-1/3 my-8 lg:my-0">
           <Link
@@ -12,7 +12,7 @@ const Footer = () => {
             className="flex justify-start md:justify-center space-x-3 lg:justify-start"
           >
             <div className="flex items-center justify-center w-9 h-9 rounded-full">
-              <img src="/public/tourism.png" alt="logo" />
+              <img src="https://i.ibb.co/1LkKBCY/tourism.png" alt="logo" />
             </div>
             <span className="self-center text-2xl font-semibold site-title">
               TravelBangla

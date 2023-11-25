@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import { updateProfile } from "firebase/auth";
@@ -7,12 +7,12 @@ import { Helmet } from "react-helmet-async";
 import auth from "../../config/Firebase.config";
 import toast from "react-hot-toast";
 // import useAxiosPublic from "../../hooks/useAxiosPublic";
-import { ThemeContext } from "../../providers/ThemeProvider";
+import useAuth from "../../hooks/useAuth";
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
   //   const axiosPublic = useAxiosPublic();
   const navigate = useNavigate();
-  const { logOut, createUser, googleSignIn } = useContext(ThemeContext);
+  const { logOut, createUser, googleSignIn } = useAuth();
   const {
     register,
     handleSubmit,
@@ -77,18 +77,24 @@ const Register = () => {
       <Helmet>
         <title>TravelBangla | Register </title>
       </Helmet>
-      <div className="lg:min-h-screen px-5 py-12 lg:py-0 flex items-center justify-center ">
+      <div className="lg:min-h-screen px-5 py-12 lg:py-0 flex items-center justify-center my-10">
         <div className="flex bg-white dark-bg-yellow  rounded-lg shadow-sm border w-full max-w-5xl">
           {/* Left Column for Image */}
-          <div className="w-1/2 bg-[#ACD27A] p-12 hidden md:block">
+          <div
+            className="w-1/2 bg-[#ACD27A] p-12 hidden md:block bg-no-repeat bg-bottom bg-cover"
+            style={{
+              backgroundImage:
+                "url('https://scontent.fdac22-1.fna.fbcdn.net/v/t1.6435-9/40368635_667904946909536_7554065879810441216_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeENykljzhho37ScmTaG6hkUJAKAB-nAu2wkAoAH6cC7bMtE2o06G1e8JVp3CvD2l7jAgYVyCrhm437Hen7j-pv6&_nc_ohc=A_XXOF1GergAX_V_SG0&_nc_ht=scontent.fdac22-1.fna&oh=00_AfCQ9utQls-WFcfIllt16m7B-LJjjxMhi8LIL9-sWRbxgg&oe=65888C72')",
+            }}
+          >
             <h1 className="text-3xl font-semibold text-center mb-1 text-white ">
               Register Now
             </h1>
-            <img
+            {/* <img
               src="https://i.ibb.co/HKVWrZP/login.png"
               alt="Login Image"
               className="w-full h-full object-cover"
-            />
+            /> */}
           </div>
 
           {/* Right Column for Login Form */}
@@ -232,7 +238,7 @@ const Register = () => {
                 <div className="mb-4">
                   <button
                     type="submit"
-                    className=" flex items-center justify-center w-full text-white py-2 px-4 rounded-lg bg-[#ACD27A] hover:bg-[#ACD27A] focus:outline-none"
+                    className=" flex items-center justify-center w-full text-white py-2 px-4 rounded-lg bg-[#7BAB9A] hover:bg-[#7BAB9A] focus:outline-none"
                   >
                     Register
                   </button>
@@ -246,7 +252,7 @@ const Register = () => {
               <div>
                 <p className="mt-8 text-md">
                   Alredy have an Account?
-                  <Link to="/login" className="text-[#ACD27A] font-bold ml-2">
+                  <Link to="/login" className="text-[#7BAB9A] font-bold ml-2">
                     Login
                   </Link>
                 </p>

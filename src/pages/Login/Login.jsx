@@ -1,14 +1,14 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import toast from "react-hot-toast";
-import { ThemeContext } from "../../providers/ThemeProvider";
 import {
   loadCaptchaEnginge,
   LoadCanvasTemplate,
   validateCaptcha,
 } from "react-simple-captcha";
 import { Helmet } from "react-helmet-async";
+import useAuth from "../../hooks/useAuth";
 // import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const Login = () => {
@@ -17,7 +17,7 @@ const Login = () => {
   const navigate = useNavigate();
   //   const axiosPublic = useAxiosPublic();
 
-  const { googleSignIn, signInUser } = useContext(ThemeContext);
+  const { googleSignIn, signInUser } = useAuth();
 
   const location = useLocation();
 
@@ -89,7 +89,7 @@ const Login = () => {
             className="w-1/2 bg-[#ACD27A] p-12 hidden md:block bg-no-repeat bg-bottom bg-cover "
             style={{
               backgroundImage:
-                "url('https://i.ibb.co/3vzKPQz/1-1-370x500.webp')",
+                "url('https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/339576696_670809898182846_6006032646846495184_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFWMuevwqHjcyTmegZFH2X7FR576dFmARoVHnvp0WYBGmtaV_wLz4rWwq2rzGOCPucx3bfHqBjuE3MHF58HSymL&_nc_ohc=MLQNZVBeEWUAX9PDGGM&_nc_ht=scontent.fdac22-1.fna&oh=00_AfCr4EhebZaV7MDoFXXTT5tQRLOU6vBkQgrkBZLqkdH9oA&oe=65663233')",
             }}
           >
             <h1 className="text-3xl font-semibold text-center mb-1 text-white ">

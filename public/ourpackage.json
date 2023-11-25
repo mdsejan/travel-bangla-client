@@ -1,0 +1,158 @@
+[
+  {
+    "spotPhoto": "https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/382230705_2306930852824300_1011948376688470307_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGb7UDjRWfUBAb1SyAToH_Mf3ebvjBJQPh_d5u-MElA-NPqueQZhINc8Qpzm1hUdacP8DGmTtDQT056btE9HN6q&_nc_ohc=9Wtu7uAS1b0AX8WSeFA&_nc_ht=scontent.fdac22-1.fna&oh=00_AfA0aFrb84EKoGE3hYYR18BmIq_8ADF5_CacCU4t42zR_Q&oe=6566888D",
+    "tourType": "Adventure",
+    "tripTitle": "Exploring Sundarbans",
+    "price": "$500",
+    "gallery": [
+      "https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/383210611_7019326054786877_5905963973424838863_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFZVDbw3FYbIecOdOwO7l3m34VRfbwHFG3fhVF9vAcUbV-3kaVrv5iJIxbYgezqiWiUAFjOtRUdwtiLmE6NyQZE&_nc_ohc=UJjfu9GiU1sAX89eAAa&_nc_ht=scontent.fdac22-1.fna&oh=00_AfBhu8ds5bM9pDgdmGpClQ4RIhXV31eW_KT3fc6MCXvpvg&oe=65670F89",
+      "https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/391652041_2318086848375367_6772367264683930281_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG2-L7aID88mH6lXs6PLIi5KyAZ53tO9-YrIBnne0735tK4FXUZKsi79NhAdQwHQ-MEzgA1COCpbYuECzHXyXPG&_nc_ohc=R_RH5dW9xtQAX8qT8VQ&_nc_ht=scontent.fdac22-1.fna&oh=00_AfA0GYVr-G8vrAVbThChIcDgunbUFwG32AQt-lDqp29xMg&oe=65682978",
+      "https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/384105426_7019326714786811_6546170095664934835_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHP01ymhPwO40eQFG4CFyiNscbmUjH_HG6xxuZSMf8cbnYqardKwIF4DM3aBfSRQMBza_gogeehPFMrysFVMsJY&_nc_ohc=kTXHhVigYlYAX-U-EmH&_nc_ht=scontent.fdac22-1.fna&oh=00_AfDFwS2H-6XFmB2CEPiYwOsnqYR5F-E2TNcpVo9iEdm29g&oe=656797A1",
+      "https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/401662330_2712164922268151_5724976534562722230_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHKZKkvmTT6e6MsbvbBdOGgGgxgFibByGQaDGAWJsHIZGfbhWyyafwQv7tHsze3pjMZCzjeMvqBylXu7U0dDDCg&_nc_ohc=GGJQA4S8Z3AAX8oAL84&_nc_ht=scontent.fdac22-1.fna&oh=00_AfCYQ7VC2_jQax6h91Zp92qE80m7XJiUdG3j4tX-Ksauiw&oe=65675D0C"
+    ],
+    "aboutTour": "Embark on an unforgettable adventure to the Sundarbans, the world's largest mangrove forest. Discover its biodiversity and witness the captivating beauty of this UNESCO World Heritage Site. Marvel at the Royal Bengal Tiger, saltwater crocodiles, and various bird species inhabiting this unique ecosystem.",
+    "tourPlan": [
+      {
+        "title": "Day 1: Arrival and Check-in",
+        "description": "Arrive at the forest resort and check-in. Get acquainted with the surroundings and enjoy leisure time."
+      },
+      {
+        "title": "Day 2: Jungle Safari and Bird Watching",
+        "description": "Embark on an early morning jungle safari to explore wildlife. Spend the afternoon bird watching in designated spots."
+      },
+      {
+        "title": "Day 3: Village Visit and Canoe Ride",
+        "description": "Visit a tribal village to experience local culture. Enjoy a serene canoe ride through mangrove creeks."
+      },
+      {
+        "title": "Day 4: Wildlife Spotting and Cultural Evening",
+        "description": "Engage in wildlife spotting activities. Later, enjoy an evening campfire and cultural program."
+      },
+      {
+        "title": "Day 5: Departure",
+        "description": "Depart from the forest resort after breakfast. Transfer back to the city."
+      }
+    ]
+  },
+
+  {
+    "spotPhoto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Lalbag_Fort_Front.jpg/1024px-Lalbag_Fort_Front.jpg",
+    "tourType": "Cultural",
+    "tripTitle": "Historical Dhaka",
+    "price": "$300",
+    "gallery": [
+      "https://www.touristplaces.com.bd/images/pp/5/p111499.jpg",
+      "dhaka2.jpg",
+      "dhaka3.jpg"
+    ],
+    "aboutTour": "Immerse yourself in the rich history and cultural heritage of Dhaka, the capital city of Bangladesh. Explore ancient sites such as Lalbagh Fort and Ahsan Manzil, showcasing the architectural beauty of bygone eras. Visit the National Museum to discover artifacts revealing the country's history.",
+    "tourPlan": [
+      {
+        "title": "Day 1: Arrival and Check-in",
+        "description": "Arrive in Dhaka and check-in at the hotel. Take time to relax and get acquainted with the surroundings."
+      },
+      {
+        "title": "Day 2: Exploring Lalbagh Fort",
+        "description": "Visit Lalbagh Fort, an iconic historical site. Explore its architecture and the stories it holds."
+      },
+      {
+        "title": "Day 3: Ahsan Manzil and National Museum",
+        "description": "Tour Ahsan Manzil, known as the Pink Palace, and explore the National Museum, discovering artifacts showcasing the country's heritage."
+      },
+      {
+        "title": "Day 4: Modern Dhaka Exploration",
+        "description": "Explore modern facets of Dhaka, engage in shopping, and experience the vibrant culture."
+      },
+      {
+        "title": "Day 5: Departure",
+        "description": "Depart from Dhaka, concluding the historical journey. Transfer to the airport for departure."
+      }
+    ]
+  },
+  {
+    "spotPhoto": "spot3.jpg",
+    "tourType": "Nature",
+    "tripTitle": "Charming Cox's Bazar",
+    "price": "$700",
+    "gallery": ["cox1.jpg", "cox2.jpg", "cox3.jpg"],
+    "aboutTour": "Experience the serenity of Cox's Bazar, boasting the world's longest natural sea beach. Engage in thrilling water sports, witness mesmerizing sunsets, and enjoy the tranquility of the Bay of Bengal.",
+    "tourPlan": [
+      {
+        "title": "Day 1: Arrival and Beach Relaxation",
+        "description": "Arrival at Cox's Bazar and relaxation time on the beach."
+      },
+      {
+        "title": "Day 2: Water Sports and Beach Activities",
+        "description": "Participate in water sports activities like surfing, jet skiing, and enjoy various beach activities."
+      },
+      {
+        "title": "Day 3: Visit Nearby Attractions",
+        "description": "Explore nearby attractions and enjoy photography of the stunning sunset."
+      },
+      {
+        "title": "Day 4: Relaxation and Optional Activities",
+        "description": "Relax on the beach and indulge in optional activities available in the area."
+      },
+      {
+        "title": "Day 5: Departure",
+        "description": "Depart from Cox's Bazar, concluding the tranquil beach experience. Transfer to the airport for departure."
+      }
+    ]
+  },
+  {
+    "spotPhoto": "spot4.jpg",
+    "tourType": "Adventure",
+    "tripTitle": "Trekking in Bandarban",
+    "price": "$600",
+    "gallery": ["bandarban1.jpg", "bandarban2.jpg", "bandarban3.jpg"],
+    "aboutTour": "Embark on thrilling treks through the hill tracts of Bandarban. Visit tribal villages, experience stunning landscapes, and discover the unique cultural heritage of the region.",
+    "tourPlan": [
+      {
+        "title": "Day 1: Arrival and Acclimatization",
+        "description": "Arrive in Bandarban and acclimate to the surroundings."
+      },
+      {
+        "title": "Day 2: Trek to Tribal Villages",
+        "description": "Start the trek to remote tribal villages, experiencing local cultures and traditions."
+      },
+      {
+        "title": "Day 3: Exploring Hilltops and Waterfalls",
+        "description": "Explore hilltops and visit picturesque waterfalls in the region."
+      },
+      {
+        "title": "Day 4: Trekking and Cultural Immersion",
+        "description": "Continue trekking and immerse in the cultural richness of the tribal communities."
+      },
+      {
+        "title": "Day 5: Departure",
+        "description": "Depart from Bandarban, concluding the adventurous trek. Transfer to the city for departure."
+      }
+    ]
+  },
+  {
+    "spotPhoto": "spot5.jpg",
+    "tourType": "Historical",
+    "tripTitle": "Mystic Mahasthangarh",
+    "price": "$400",
+    "gallery": [
+      "mahasthangarh1.jpg",
+      "mahasthangarh2.jpg",
+      "mahasthangarh3.jpg"
+    ],
+    "aboutTour": "Explore the ancient ruins of Mahasthangarh, an archaeological site dating back to the 3rd century BCE. Discover the historical significance and architectural remains of this ancient city.",
+    "tourPlan": [
+      {
+        "title": "Day 1: Arrival and Archaeological Sites",
+        "description": "Arrive at Mahasthangarh and explore the archaeological sites."
+      },
+      {
+        "title": "Day 2: Visit Local Museums",
+        "description": "Visit local museums showcasing artifacts and historical relics."
+      },
+      {
+        "title": "Day 3: Departure",
+        "description": "Conclude the exploration of Mahasthangarh. Departure from the historical site."
+      }
+    ]
+  }
+]

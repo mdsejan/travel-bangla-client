@@ -121,7 +121,7 @@ const Navbar = () => {
                   <span>{user?.email}</span>
                 </li>
                 <li>
-                  <NavLink to="/dashboard" className="mr-2">
+                  <NavLink to="/dashboard/adminHome" className="mr-2">
                     Dashboard
                   </NavLink>
                 </li>

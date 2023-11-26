@@ -28,4 +28,8 @@ Welcome to TravelBangla - the ultimate online platform offering an immersive jou
 
 ## Live Demo
 
-[Experience TravelBangla Now!](#) _(Replace this with your actual link)_
+[Experience TravelBangla Now!](https://travelbangla.netlify.app)
+
+## Server Side Repo
+
+[Check Server Side Repo ](https://github.com/programming-hero-web-course1/b8a12-server-side-mdsejan)

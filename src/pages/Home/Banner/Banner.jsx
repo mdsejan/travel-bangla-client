@@ -2,12 +2,7 @@ import herovideo from "../../../assets/video/hero.mp4";
 
 const Banner = () => {
   return (
-    <div
-      className="w-[97%] mx-auto bg-cover bg-center h-[23vh] md:h-[28vh] lg:h-[80vh] rounded-md my-3 md:my-7 banner"
-      // style={{
-      //   backgroundImage: "url(https://i.ibb.co/MSNvY3B/tour1.jpg)",
-      // }}
-    >
+    <div className="bg-cover bg-center h-[23vh] md:h-[28vh] lg:h-[80vh] banner">
       <video src={herovideo} autoPlay loop muted></video>
       <div className="bg-overlay"></div>
       <div className="content flex justify-center items-center">

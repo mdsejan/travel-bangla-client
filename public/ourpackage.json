@@ -1,6 +1,6 @@
 [
   {
-    "spotPhoto": "https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/382230705_2306930852824300_1011948376688470307_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGb7UDjRWfUBAb1SyAToH_Mf3ebvjBJQPh_d5u-MElA-NPqueQZhINc8Qpzm1hUdacP8DGmTtDQT056btE9HN6q&_nc_ohc=9Wtu7uAS1b0AX8WSeFA&_nc_ht=scontent.fdac22-1.fna&oh=00_AfA0aFrb84EKoGE3hYYR18BmIq_8ADF5_CacCU4t42zR_Q&oe=6566888D",
+    "featureImage": "https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/382230705_2306930852824300_1011948376688470307_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGb7UDjRWfUBAb1SyAToH_Mf3ebvjBJQPh_d5u-MElA-NPqueQZhINc8Qpzm1hUdacP8DGmTtDQT056btE9HN6q&_nc_ohc=9Wtu7uAS1b0AX8WSeFA&_nc_ht=scontent.fdac22-1.fna&oh=00_AfA0aFrb84EKoGE3hYYR18BmIq_8ADF5_CacCU4t42zR_Q&oe=6566888D",
     "tourType": "Adventure",
     "tripTitle": "Exploring Sundarbans",
     "price": "$500",
@@ -36,7 +36,7 @@
   },
 
   {
-    "spotPhoto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Lalbag_Fort_Front.jpg/1024px-Lalbag_Fort_Front.jpg",
+    "featureImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Lalbag_Fort_Front.jpg/1024px-Lalbag_Fort_Front.jpg",
     "tourType": "Cultural",
     "tripTitle": "Historical Dhaka",
     "price": "$300",
@@ -70,7 +70,7 @@
     ]
   },
   {
-    "spotPhoto": "spot3.jpg",
+    "featureImage": "spot3.jpg",
     "tourType": "Nature",
     "tripTitle": "Charming Cox's Bazar",
     "price": "$700",
@@ -100,7 +100,7 @@
     ]
   },
   {
-    "spotPhoto": "spot4.jpg",
+    "featureImage": "spot4.jpg",
     "tourType": "Adventure",
     "tripTitle": "Trekking in Bandarban",
     "price": "$600",
@@ -130,7 +130,7 @@
     ]
   },
   {
-    "spotPhoto": "spot5.jpg",
+    "featureImage": "spot5.jpg",
     "tourType": "Historical",
     "tripTitle": "Mystic Mahasthangarh",
     "price": "$400",

@@ -58,6 +58,32 @@ a.active {
   height: 100%;
   z-index: 5;
 }
+
+.react-tabs__tab-list {
+  text-align: center;
+}
+
+.react-tabs__tab--selected {
+  background: #7bab9a !important;
+  border-color: none;
+  color: white !important;
+  border-radius: 0 !important;
+}
+
+.react-tabs__tab {
+  border: 1px solid transparent;
+  border-bottom: none;
+  background: #d7f0e7;
+  margin: 0 1rem;
+  padding: 6px 12px;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 0 !important;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
 /* font-family: 'Kalam', cursive;
 font-family: 'Marhey', sans-serif;
 font-family: 'Montserrat', sans-serif;

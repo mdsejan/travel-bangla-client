@@ -9,7 +9,7 @@ import TourGuides from "./TourGuides/TourGuides";
 const TravelTabs = () => {
   const [tabIndex, setTabIndex] = useState(0);
   return (
-    <div className="my-20">
+    <div className="my-8 md:my-20">
       <Container>
         <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
           <TabList>

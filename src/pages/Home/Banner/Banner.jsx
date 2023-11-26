@@ -6,11 +6,11 @@ const Banner = () => {
       <video src={herovideo} autoPlay loop muted></video>
       <div className="bg-overlay"></div>
       <div className="content flex justify-center items-center">
-        <div className="text-white text-center hidden md:block">
-          <h2 className="text-4xl lg:text-6xl font-bold mb-4 lg:mb-8 htitle">
+        <div className="text-white text-center ">
+          <h2 className="text-xl md:text-4xl lg:text-6xl font-bold mb-4 lg:mb-8 htitle">
             Explore with Travel Bangla
           </h2>
-          <p className="lg:text-xl">{`Unveiling Bangladesh's Rich Tapestry of Adventures and Culture!`}</p>
+          <p className="text-xs lg:text-xl">{`Unveiling Bangladesh's Rich Tapestry of Adventures and Culture!`}</p>
         </div>
       </div>
     </div>

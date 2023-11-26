@@ -17,7 +17,7 @@ const Overview = () => {
           </div>
 
           <div className="flex-1">
-            <h3 className="text-2xl font-semibold mb-3">Best of hotel</h3>
+            <h3 className="text-2xl font-semibold mb-3">Best of Places</h3>
             <p>
               Ut enim ad minima veniam, quis nostrum exercitation em ullam
               corporis suscipit laboriosam, nisi ut al

@@ -80,7 +80,7 @@ const Login = () => {
   return (
     <>
       <Helmet>
-        <title>TravelBangla | Login </title>
+        <title>Login - TravelBangla</title>
       </Helmet>
       <div className="lg:min-h-screen px-5 py-12 lg:py-0 flex items-center justify-center ">
         <div className="flex bg-white dark-bg-yellow  rounded-lg shadow-sm border w-full max-w-4xl">

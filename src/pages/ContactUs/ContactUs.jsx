@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 import Container from "../../components/Container";
 
 const ContactUs = () => {
   return (
     <Container>
+      <Helmet>
+        <title>Contact Us - TravelBangla</title>
+      </Helmet>
       <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-36 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32  text-gray-800">
         <div className="flex flex-col justify-between">
           <div className="space-y-2">

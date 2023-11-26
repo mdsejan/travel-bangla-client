@@ -11,6 +11,7 @@ import MyProfile from "../pages/Dashboard/AdminDashboard/MyProfile/MyProfile";
 import AddPackage from "../pages/Dashboard/AdminDashboard/AddPackage/AddPackage";
 import Dashboard from "../pages/Layout/Dashboard";
 import ManageUsers from "../pages/Dashboard/AdminDashboard/ManageUsers/ManageUsers";
+import AllPackage from "../pages/AllPackage/AllPackage";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home></Home>,
+      },
+
+      {
+        path: "all-package",
+        element: <AllPackage></AllPackage>,
       },
 
       {

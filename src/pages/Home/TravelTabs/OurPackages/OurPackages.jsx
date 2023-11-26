@@ -1,4 +1,5 @@
-import PackageCard from "./PackageCard";
+import { Link } from "react-router-dom";
+import PackageCard from "../../../../components/PackageCard";
 
 const OurPackages = () => {
   return (
@@ -10,9 +11,11 @@ const OurPackages = () => {
         <PackageCard></PackageCard>
       </div>
       <div className="text-center mt-10">
-        <button className="bg-[#7CAB9B] hover:bg-[#7CAB9B] text-white text-md font-semibold py-2 px-8 rounded">
-          All Packages
-        </button>
+        <Link to="/all-package">
+          <button className="bg-[#7CAB9B] hover:bg-[#7CAB9B] text-white text-md font-semibold py-2 px-8 rounded">
+            All Packages
+          </button>
+        </Link>
       </div>
     </>
   );

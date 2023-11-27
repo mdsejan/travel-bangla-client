@@ -12,6 +12,7 @@ import AddPackage from "../pages/Dashboard/AdminDashboard/AddPackage/AddPackage"
 import Dashboard from "../pages/Layout/Dashboard";
 import ManageUsers from "../pages/Dashboard/AdminDashboard/ManageUsers/ManageUsers";
 import AllPackage from "../pages/AllPackage/AllPackage";
+import AdminRoute from "./AdminRoute";
 
 const router = createBrowserRouter([
   {
@@ -45,7 +46,11 @@ const router = createBrowserRouter([
 
   {
     path: "dashboard",
-    element: <Dashboard></Dashboard>,
+    element: (
+      <PrivateRoute>
+        <Dashboard></Dashboard>
+      </PrivateRoute>
+    ),
     children: [
       {
         path: "adminHome",
@@ -53,7 +58,11 @@ const router = createBrowserRouter([
       },
       {
         path: "myProfile",
-        element: <MyProfile></MyProfile>,
+        element: (
+          <AdminRoute>
+            <MyProfile></MyProfile>
+          </AdminRoute>
+        ),
       },
       {
         path: "addPackage",

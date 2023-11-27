@@ -33,11 +33,6 @@ const Dashboard = () => {
           <FaGear /> Manage Users
         </NavLink>
       </li>
-      {/* <li>
-        <NavLink to="/dashboard/users">
-          <FaUsers /> All Users
-        </NavLink>
-      </li> */}
     </>
   );
 
@@ -65,7 +60,7 @@ const Dashboard = () => {
     <div className="flex flex-col lg:flex-row">
       <div className="w-64 min-h-screen bg-gray-200 py-10 px-5 shadow-sm hidden lg:block">
         <div className="flex items-center bg-white rounded-3xl shadow-sm mb-8">
-          <label className="btn btn-ghost btn-circle avatar">
+          <label className="btn btn-ghost btn-circle avatar m-1">
             <div className="w-14 rounded-full ">
               {user && (
                 <img

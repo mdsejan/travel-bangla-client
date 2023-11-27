@@ -67,7 +67,7 @@ const ManageUsers = () => {
 
   return (
     <>
-      <div className="flex justify-between users-center max-w-screen-lg mx-auto p-10 bg-white rounded-t-lg">
+      <div className="flex justify-between users-center max-w-screen-lg mx-auto p-6 bg-white rounded-t-lg">
         <h2 className="text-3xl">
           <b>Manage Users</b>
         </h2>
@@ -75,7 +75,7 @@ const ManageUsers = () => {
           <b>Total Users:</b> {users.length}
         </h2>
       </div>
-      <div className="overflow-x-auto max-w-screen-lg mx-auto bg-white p-10 rounded-b-lg">
+      <div className="overflow-x-auto max-w-screen-lg mx-auto bg-white p-6 rounded-b-lg">
         <table className="table">
           {/* head */}
           <thead className="bg-[#7BAB9A] text-lg text-white font-bold">

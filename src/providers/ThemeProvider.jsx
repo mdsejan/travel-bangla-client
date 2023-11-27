@@ -9,7 +9,7 @@ import {
   signOut,
 } from "firebase/auth";
 import auth from "../config/Firebase.config";
-// import useAxiosPublic from "../hooks/useAxiosPublic";
+import useAxiosPublic from "../hooks/useAxiosPublic";
 
 const GoogleProvider = new GoogleAuthProvider();
 
@@ -18,7 +18,7 @@ export const ThemeContext = createContext(null);
 const ThemeProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  //   const axiosPublic = useAxiosPublic();
+  const axiosPublic = useAxiosPublic();
 
   const createUser = (email, password) => {
     setLoading(true);
@@ -43,27 +43,27 @@ const ThemeProvider = ({ children }) => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       setLoading(false);
-      //   if (currentUser) {
-      //     // get tocken and store client
-      //     const userInfo = { email: currentUser.email };
-      //     axiosPublic.post("/jwt", userInfo).then((res) => {
-      //       if (res.data.token) {
-      //         localStorage.setItem("access-token", res.data.token);
-      //       }
-      //       setLoading(false);
-      //     });
-      //   } else {
-      //     //TODO: Remove Token
-      //     localStorage.removeItem("access-token");
-      //     setLoading(false);
-      //   }
+      if (currentUser) {
+        // get tocken and store client
+        const userInfo = { email: currentUser.email };
+        axiosPublic.post("/jwt", userInfo).then((res) => {
+          if (res.data.token) {
+            localStorage.setItem("access-token", res.data.token);
+          }
+          setLoading(false);
+        });
+      } else {
+        //TODO: Remove Token
+        localStorage.removeItem("access-token");
+        setLoading(false);
+      }
       console.log("Observed User:", currentUser);
     });
 
     return () => {
       unSubscribe();
     };
-  }, [user]);
+  }, [user, axiosPublic]);
 
   const themeInfo = {
     googleSignIn,

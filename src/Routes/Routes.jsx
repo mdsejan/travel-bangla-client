@@ -13,6 +13,7 @@ import Dashboard from "../pages/Layout/Dashboard";
 import ManageUsers from "../pages/Dashboard/AdminDashboard/ManageUsers/ManageUsers";
 import AllPackage from "../pages/AllPackage/AllPackage";
 import AdminRoute from "./AdminRoute";
+import PackageDetails from "../pages/PackageDetails/PackageDetails";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "all-package",
         element: <AllPackage></AllPackage>,
+      },
+      {
+        path: "packageDetails/:id",
+        element: <PackageDetails></PackageDetails>,
       },
 
       {

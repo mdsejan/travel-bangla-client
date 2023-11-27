@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 const PackageCard = ({ item }) => {
   console.log(item);
-  const { featureImage, tripTitle, tourType, aboutTour, price } = item || {};
+  const { _id, featureImage, tripTitle, tourType, aboutTour, price } =
+    item || {};
 
   return (
     <div className="card bg-base-100 border shadow rounded-md">
@@ -22,7 +23,7 @@ const PackageCard = ({ item }) => {
         <h2 className="card-title">{tripTitle}</h2>
         <p>{aboutTour?.slice(0, 100)}</p>
         <div className="text-center mt-10">
-          <Link to="/all-package">
+          <Link to={`/packageDetails/${_id}`}>
             <button className="bg-[#7CAB9B] hover:bg-[#7CAB9B] text-white text-md py-2 px-8 rounded">
               View Details
             </button>

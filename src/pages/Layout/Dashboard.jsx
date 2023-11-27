@@ -49,8 +49,8 @@ const Dashboard = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/menu">
-          <RiMenuSearchFill /> Menu
+        <NavLink to="/all-package">
+          <RiMenuSearchFill /> All Package
         </NavLink>
       </li>
       <li>

@@ -1,17 +1,69 @@
 import { useQuery } from "@tanstack/react-query";
-import { FaTrash } from "react-icons/fa6";
+// import { FaTrash } from "react-icons/fa6";
 import useAxiosSecure from "../../../../hooks/useAxiosSecure";
+import Swal from "sweetalert2";
 
 const ManageUsers = () => {
   const axiosSecure = useAxiosSecure();
 
-  const { data: users = [] } = useQuery({
+  const { refetch, data: users = [] } = useQuery({
     queryKey: ["users"],
     queryFn: async () => {
       const res = await axiosSecure.get(`/users`);
       return res.data;
     },
   });
+
+  const handleMakeAdmin = (user) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, Make Admin!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        axiosSecure.patch(`/user/admin/${user}`).then((res) => {
+          console.log(res);
+          if (res.data.modifiedCount > 0) {
+            refetch();
+            Swal.fire({
+              title: "Admin Set!",
+              text: "User Role has been set Admin.",
+              icon: "success",
+            });
+          }
+        });
+      }
+    });
+  };
+  const handleMakeTourGuide = (user) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, Make Tour Guide!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        axiosSecure.patch(`/user/guide/${user}`).then((res) => {
+          console.log(res);
+          if (res.data.modifiedCount > 0) {
+            refetch();
+            Swal.fire({
+              title: "TourGuide Set!",
+              text: "User Role has been set Tour Guide.",
+              icon: "success",
+            });
+          }
+        });
+      }
+    });
+  };
 
   return (
     <>
@@ -62,10 +114,28 @@ const ManageUsers = () => {
 
                 <th>
                   <button
-                    // onClick={() => handleDelete(user._id)}
-                    className="text-2xl text-[#B91C1C] hover:text-black"
+                    onClick={() => handleMakeAdmin(user._id)}
+                    disabled={user.role === "admin"}
+                    className={` text-white py-1 px-3 rounded text-xs text-[#B91C1C] mr-4 ${
+                      user.role === "admin"
+                        ? "bg-gray-300 hover:bg-gray-300 "
+                        : "bg-orange-600 hover:bg-black"
+                    }`}
                   >
-                    <FaTrash />
+                    make admin
+                  </button>
+                  <button
+                    onClick={() => handleMakeTourGuide(user._id)}
+                    disabled={
+                      user.role === "admin" || user.role === "tourGuide"
+                    }
+                    className={` text-white py-1 px-3 rounded text-xs text-[#B91C1C] mr-4 ${
+                      user.role === "admin" || user.role === "tourGuide"
+                        ? "bg-gray-300 hover:bg-gray-300 "
+                        : "bg-orange-600 hover:bg-black"
+                    }`}
+                  >
+                    Make Tour Guide
                   </button>
                 </th>
               </tr>

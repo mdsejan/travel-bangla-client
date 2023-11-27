@@ -9,13 +9,13 @@ import {
 } from "react-simple-captcha";
 import { Helmet } from "react-helmet-async";
 import useAuth from "../../hooks/useAuth";
-// import useAxiosPublic from "../../hooks/useAxiosPublic";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [disabled, setDisabled] = useState(true);
   const navigate = useNavigate();
-  //   const axiosPublic = useAxiosPublic();
+  const axiosPublic = useAxiosPublic();
 
   const { googleSignIn, signInUser } = useAuth();
 
@@ -58,14 +58,14 @@ const Login = () => {
     googleSignIn()
       .then((result) => {
         toast.success("Logged in");
-        console.log(result);
-        // const userInfo = {
-        //   email: result.user?.email,
-        //   name: result.user?.displayName,
-        // };
-        // axiosPublic.post("/user", userInfo).then((res) => {
-        //   console.log(res.data);
-        // });
+        const userInfo = {
+          email: result.user?.email,
+          name: result.user?.displayName,
+          role: "tourist",
+        };
+        axiosPublic.post("/user", userInfo).then((res) => {
+          console.log(res.data);
+        });
 
         navigate(location?.state ? location.state : "/");
       })

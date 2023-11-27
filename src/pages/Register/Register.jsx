@@ -6,11 +6,12 @@ import { useForm } from "react-hook-form";
 import { Helmet } from "react-helmet-async";
 import auth from "../../config/Firebase.config";
 import toast from "react-hot-toast";
-// import useAxiosPublic from "../../hooks/useAxiosPublic";
 import useAuth from "../../hooks/useAuth";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
+
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
-  //   const axiosPublic = useAxiosPublic();
+  const axiosPublic = useAxiosPublic();
   const navigate = useNavigate();
   const { logOut, createUser, googleSignIn } = useAuth();
   const {
@@ -21,6 +22,7 @@ const Register = () => {
   } = useForm();
 
   const onSubmit = (data) => {
+    const toastId = toast.loading("Processing ...");
     createUser(data.email, data.password).then((result) => {
       const loggedUser = result.user;
       console.log(loggedUser);
@@ -29,20 +31,19 @@ const Register = () => {
         photoURL: data.imgLink,
       }).then(() => {
         // Create user entry in the database
-        // const userInfo = {
-        //   name: data.fullName,
-        //   email: data.email,
-        // };
-        // axiosPublic.post("/user", userInfo).then((res) => {
-        //   if (res.data.insertedId) {
-        //     toast.success("Successfully Registered");
-        //     logOut();
-        //     navigate("/login");
-        //   }
-        // });
-        logOut();
-        toast.success("Successfully Registered");
-        navigate("/login");
+        const userInfo = {
+          name: data.fullName,
+          email: data.email,
+          role: "tourist",
+        };
+
+        axiosPublic.post("/user", userInfo).then((res) => {
+          if (res.data.insertedId) {
+            toast.success("Successfully Registered", { id: toastId });
+            logOut();
+            navigate("/login");
+          }
+        });
       });
     });
   };
@@ -52,14 +53,14 @@ const Register = () => {
   const handleGoogleLogin = () => {
     googleSignIn()
       .then((result) => {
-        console.log(result.user);
-        // const userInfo = {
-        //   email: result.user?.email,
-        //   name: result.user?.displayName,
-        // };
-        // axiosPublic.post("/user", userInfo).then((res) => {
-        //   console.log(res.data);
-        // });
+        const userInfo = {
+          email: result.user?.email,
+          name: result.user?.displayName,
+          role: "tourist",
+        };
+        axiosPublic.post("/user", userInfo).then((res) => {
+          console.log(res.data);
+        });
 
         navigate(location?.state ? location.state : "/");
       })
@@ -107,7 +108,7 @@ const Register = () => {
               <div className="text-center">
                 <button
                   onClick={handleGoogleLogin}
-                  className="btn btn-outline w-full mt-4 capitalize font-bold text-[#ACD27A] hover:bg-[#ACD27A] "
+                  className="btn btn-outline w-full mt-4 capitalize font-bold text-[#7BAB9A] hover:bg-[#7BAB9A] "
                 >
                   <img
                     className="w-4"

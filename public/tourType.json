@@ -1,0 +1,22 @@
+[
+  {
+    "typeTitle": "Adventure",
+    "image": "https://i.ibb.co/XZ4XCvZ/adventurer.png"
+  },
+  {
+    "typeTitle": "Cultural",
+    "image": "https://i.ibb.co/MDM6bWR/culture.png"
+  },
+  {
+    "typeTitle": "Nature",
+    "image": "https://i.ibb.co/RpGy3jd/nature.png"
+  },
+  {
+    "typeTitle": "Historical",
+    "image": "https://i.ibb.co/BzJxxK3/history.png"
+  },
+  {
+    "typeTitle": "Relaxation & Leisure",
+    "image": "https://i.ibb.co/6Xhf4Vp/Relaxation.png"
+  }
+]

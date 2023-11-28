@@ -116,7 +116,7 @@ const ManageUsers = () => {
                   <button
                     onClick={() => handleMakeAdmin(user._id)}
                     disabled={user.role === "admin"}
-                    className={` text-white py-1 px-3 rounded text-xs text-[#B91C1C] mr-4 ${
+                    className={` text-white py-1 px-3 rounded text-xs mr-4 ${
                       user.role === "admin"
                         ? "bg-gray-300 hover:bg-gray-300 "
                         : "bg-orange-600 hover:bg-black"
@@ -129,7 +129,7 @@ const ManageUsers = () => {
                     disabled={
                       user.role === "admin" || user.role === "tourGuide"
                     }
-                    className={` text-white py-1 px-3 rounded text-xs text-[#B91C1C] mr-4 ${
+                    className={` text-white py-1 px-3 rounded text-xs mr-4 ${
                       user.role === "admin" || user.role === "tourGuide"
                         ? "bg-gray-300 hover:bg-gray-300 "
                         : "bg-orange-600 hover:bg-black"

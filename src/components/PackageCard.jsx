@@ -3,15 +3,18 @@ import { Link } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import toast from "react-hot-toast";
-import { useContext } from "react";
-import { ThemeContext } from "../providers/ThemeProvider";
+import useAuth from "../hooks/useAuth";
+import useWishList from "../hooks/useWishList";
 
 const PackageCard = ({ item }) => {
   const { _id, featureImage, tripTitle, tourType, aboutTour, price } =
     item || {};
 
   const axiosPublic = useAxiosPublic();
-  const { user } = useContext(ThemeContext);
+  const { user } = useAuth();
+  const [wishlist] = useWishList();
+
+  console.log(wishlist);
 
   const handleWishlist = () => {
     const toastId = toast.loading("adding ...");

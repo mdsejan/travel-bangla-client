@@ -127,7 +127,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-6 text-sm text-center border-t border-gray-400 text-gray-600">
-        © 2024 TravelBangla. All rights reserved.
+        {`© ${new Date().getFullYear()} TravelBangla. All rights reserved.`}
       </div>
     </footer>
   );

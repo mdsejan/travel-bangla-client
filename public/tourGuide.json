@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Rahim Ahmed",
+    "profile_picture": "https://example.com/rahim_ahmed_profile.jpg",
+    "contact_details": {
+      "email": "rahim@mail.com",
+      "phone": "+880123456789",
+      "address": "Dhaka, Bangladesh"
+    },
+    "education": [
+      {
+        "degree": "Bachelor's in Tourism and Hospitality Management",
+        "school": "University of Dhaka",
+        "year": 2014
+      },
+      {
+        "degree": "Certification in Bangladeshi Cultural Heritage",
+        "school": "Bangladesh Tourism Board",
+        "year": 2015
+      }
+    ],
+    "skills": [
+      "Fluent in Bengali and English",
+      "Cultural Heritage Expertise",
+      "Knowledge of Historical Sites in Bangladesh",
+      "Customer Service",
+      "Event Planning"
+    ],
+    "work_experience": [
+      {
+        "position": "Lead Tour Guide",
+        "company": "Discover Bangladesh Tours",
+        "years": "2016 - Present",
+        "responsibilities": [
+          "Conducting guided tours to historical sites",
+          "Showcasing cultural heritage",
+          "Arranging customized itineraries",
+          "Providing insights into local traditions"
+        ]
+      },
+      {
+        "position": "Tour Coordinator",
+        "company": "Heritage Explorations",
+        "years": "2014 - 2016",
+        "responsibilities": [
+          "Coordinating logistics for group tours",
+          "Assisting tourists and guides",
+          "Organizing cultural events"
+        ]
+      }
+    ]
+  }
+]

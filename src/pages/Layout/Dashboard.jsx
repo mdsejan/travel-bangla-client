@@ -14,15 +14,15 @@ const Dashboard = () => {
   const navLink = (
     <>
       <li>
-        <NavLink to="/dashboard/adminHome">
-          <FaHouse /> Dashboard
+        <NavLink to="/dashboard/admin/myProfile">
+          <FaHouse /> My Profile
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink to="/dashboard/myProfile">
           <MdAddToPhotos /> myProfile
         </NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink to="/dashboard/addPackage">
           <MdAddToPhotos /> Add Package

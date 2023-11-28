@@ -32,47 +32,6 @@ const Navbar = () => {
           </NavLink>
         </li>
       )}
-
-      {/* {!user ? (
-        <li>
-          <NavLink to="/login" className="mr-2">
-            Login
-          </NavLink>
-        </li>
-      ) : (
-        <>
-          <li>
-            <button
-              onClick={handleLogOut}
-              className="hover:bg-transparent text-red-800 hover:text-red-600 font-semibold hover:font-bold"
-            >
-              Logout
-            </button>
-          </li>
-          <li tabIndex={0}>
-            <details className="font-semibold">
-              <summary>Dashboard</summary>
-              <ul className="p-1 w-36">
-                <li>
-                  <NavLink to="/add-swap" className="mr-2">
-                    Add Swap
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/my-swaps" className="mr-2">
-                    My Swaps
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/my-schedule" className="mr-2">
-                    My Schedules
-                  </NavLink>
-                </li>
-              </ul>
-            </details>
-          </li>
-        </>
-      )} */}
     </>
   );
   return (
@@ -121,7 +80,7 @@ const Navbar = () => {
                   <span>{user?.email}</span>
                 </li>
                 <li>
-                  <NavLink to="/dashboard/adminHome" className="mr-2">
+                  <NavLink to="/dashboard/admin/myProfile" className="mr-2">
                     Dashboard
                   </NavLink>
                 </li>

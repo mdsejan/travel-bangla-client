@@ -1,13 +1,36 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
+import useAxiosPublic from "../hooks/useAxiosPublic";
+import toast from "react-hot-toast";
+import { useContext } from "react";
+import { ThemeContext } from "../providers/ThemeProvider";
 
 const PackageCard = ({ item }) => {
   const { _id, featureImage, tripTitle, tourType, aboutTour, price } =
     item || {};
 
+  const axiosPublic = useAxiosPublic();
+  const { user } = useContext(ThemeContext);
+
   const handleWishlist = () => {
-    console.log(_id);
+    const toastId = toast.loading("adding ...");
+    const wishPackage = {
+      packageImg: featureImage,
+      packageName: tripTitle,
+      packagePrice: price,
+      packageId: _id,
+      userEmail: user.email,
+    };
+
+    axiosPublic.post("/wishList", wishPackage).then((res) => {
+      if (res.data.insertedId) {
+        toast.success("Package added to wishlist", {
+          id: toastId,
+          duration: 3000,
+        });
+      }
+    });
   };
   return (
     <div className="card bg-base-100 border shadow rounded-md relative">

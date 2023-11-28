@@ -17,6 +17,7 @@ import PackageDetails from "../pages/PackageDetails/PackageDetails";
 import TouristProfile from "../pages/Dashboard/TouristDashboard/TouristProfile/TouristProfile";
 import TourGuideProfile from "../pages/Dashboard/TourGuideDashboard/TourGuideProfile/TourGuideProfile";
 import MyWishlist from "../pages/Dashboard/TouristDashboard/MyWishlist/MyWishlist";
+import PackageByType from "../pages/PackageByType/PackageByType";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "all-package",
         element: <AllPackage></AllPackage>,
+      },
+      {
+        path: "packageType/:type",
+        element: <PackageByType></PackageByType>,
       },
       {
         path: "packageDetails/:id",

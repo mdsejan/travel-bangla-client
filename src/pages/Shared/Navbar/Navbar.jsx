@@ -2,11 +2,13 @@ import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import useAdmin from "../../../hooks/useAdmin";
 import useTourist from "../../../hooks/useTourist";
+import useTourGuide from "../../../hooks/useTourGuide";
 
 const Navbar = () => {
   const { user, logOut } = useAuth();
   const [isAdmin] = useAdmin();
   const [isTourist] = useTourist();
+  const [isTourGuide] = useTourGuide();
 
   const handleLogOut = () => {
     logOut().then();
@@ -85,7 +87,7 @@ const Navbar = () => {
                 </li>
                 {user && isAdmin && (
                   <li>
-                    <NavLink to="/dashboard/admin/myProfile" className="mr-2">
+                    <NavLink to="/dashboard/admin/profile" className="mr-2">
                       Dashboard
                     </NavLink>
                   </li>
@@ -93,6 +95,13 @@ const Navbar = () => {
                 {user && isTourist && (
                   <li>
                     <NavLink to="/dashboard/tourist/profile" className="mr-2">
+                      Dashboard
+                    </NavLink>
+                  </li>
+                )}
+                {user && isTourGuide && (
+                  <li>
+                    <NavLink to="/dashboard/tourGuide/profile" className="mr-2">
                       Dashboard
                     </NavLink>
                   </li>

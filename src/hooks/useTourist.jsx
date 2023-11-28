@@ -10,7 +10,6 @@ const useTourist = () => {
     enabled: !loading,
     queryFn: async () => {
       const res = await axiosSecure.get(`/user/tourist/${user.email}`);
-      console.log(res.data);
       return res.data?.tourist;
     },
   });

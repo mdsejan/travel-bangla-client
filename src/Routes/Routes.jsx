@@ -15,6 +15,7 @@ import AllPackage from "../pages/AllPackage/AllPackage";
 import AdminRoute from "./AdminRoute";
 import PackageDetails from "../pages/PackageDetails/PackageDetails";
 import TouristProfile from "../pages/Dashboard/TouristDashboard/TouristProfile/TouristProfile";
+import TourGuideProfile from "../pages/Dashboard/TourGuideDashboard/TourGuideProfile/TourGuideProfile";
 
 const router = createBrowserRouter([
   {
@@ -65,7 +66,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "admin/myProfile",
+        path: "admin/profile",
         element: (
           <AdminRoute>
             <MyProfile></MyProfile>
@@ -89,6 +90,12 @@ const router = createBrowserRouter([
       {
         path: "tourist/profile",
         element: <TouristProfile></TouristProfile>,
+      },
+
+      // TourGuide Routes
+      {
+        path: "tourGuide/profile",
+        element: <TourGuideProfile></TourGuideProfile>,
       },
     ],
   },

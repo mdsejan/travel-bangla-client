@@ -4,11 +4,15 @@ import { RiMenuSearchFill } from "react-icons/ri";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import useAdmin from "../../hooks/useAdmin";
+import useTourist from "../../hooks/useTourist";
+import useTourGuide from "../../hooks/useTourGuide";
 
 const Dashboard = () => {
   const { logOut, user } = useAuth();
 
   const [isAdmin] = useAdmin();
+  const [isTourist] = useTourist();
+  const [isTourGuide] = useTourGuide();
 
   const handleLogOut = () => {
     logOut().then();
@@ -17,7 +21,7 @@ const Dashboard = () => {
   const navLink = isAdmin ? (
     <>
       <li>
-        <NavLink to="/dashboard/admin/myProfile">
+        <NavLink to="/dashboard/admin/profile">
           <FaHouse /> My Profile
         </NavLink>
       </li>
@@ -37,7 +41,7 @@ const Dashboard = () => {
         </NavLink>
       </li>
     </>
-  ) : (
+  ) : isTourist ? (
     <>
       <li>
         <NavLink to="/dashboard/tourist/profile">
@@ -45,6 +49,16 @@ const Dashboard = () => {
         </NavLink>
       </li>
     </>
+  ) : isTourGuide ? (
+    <>
+      <li>
+        <NavLink to="/dashboard/tourGuide/profile">
+          <FaHouse /> My Profile
+        </NavLink>
+      </li>
+    </>
+  ) : (
+    ""
   );
 
   const mainSiteLinks = (

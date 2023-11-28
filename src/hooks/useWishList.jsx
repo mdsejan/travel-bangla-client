@@ -6,14 +6,14 @@ const useWishList = () => {
   const { user } = useAuth();
   const axiosSecure = useAxiosSecure();
 
-  const { data: wishlist = [] } = useQuery({
+  const { refetch, data: wishlist = [] } = useQuery({
     queryKey: ["wishList"],
     queryFn: async () => {
       const res = await axiosSecure.get(`/wishList?user=${user.email}`);
       return res.data;
     },
   });
-  return [wishlist];
+  return [wishlist, refetch];
 };
 
 export default useWishList;

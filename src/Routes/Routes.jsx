@@ -16,6 +16,7 @@ import AdminRoute from "./AdminRoute";
 import PackageDetails from "../pages/PackageDetails/PackageDetails";
 import TouristProfile from "../pages/Dashboard/TouristDashboard/TouristProfile/TouristProfile";
 import TourGuideProfile from "../pages/Dashboard/TourGuideDashboard/TourGuideProfile/TourGuideProfile";
+import MyWishlist from "../pages/Dashboard/TouristDashboard/MyWishlist/MyWishlist";
 
 const router = createBrowserRouter([
   {
@@ -75,7 +76,11 @@ const router = createBrowserRouter([
       },
       {
         path: "addPackage",
-        element: <AddPackage></AddPackage>,
+        element: (
+          <AdminRoute>
+            <AddPackage></AddPackage>
+          </AdminRoute>
+        ),
       },
       {
         path: "manageUsers",
@@ -90,6 +95,11 @@ const router = createBrowserRouter([
       {
         path: "tourist/profile",
         element: <TouristProfile></TouristProfile>,
+      },
+
+      {
+        path: "tourist/wishlist",
+        element: <MyWishlist></MyWishlist>,
       },
 
       // TourGuide Routes

@@ -100,16 +100,6 @@ const ManageUsers = () => {
                 </td>
                 <th>
                   <h3 className="font-semibold text-lg">{user.role}</h3>
-                  {/* {user.role === "admin" ? (
-                    "Admin"
-                  ) : (
-                    <button
-                      // onClick={() => handleMakeAdmin(user._id)}
-                      className="text-2xl text-[#B91C1C] hover:text-black"
-                    >
-                      <FaUserCheck />
-                    </button>
-                  )} */}
                 </th>
 
                 <th>

@@ -1,5 +1,5 @@
-import { FaGear, FaHouse } from "react-icons/fa6";
-import { MdAddToPhotos, MdOutlineLogout } from "react-icons/md";
+import { FaGear, FaHouse, FaRectangleList } from "react-icons/fa6";
+import { MdAddToPhotos } from "react-icons/md";
 import { RiMenuSearchFill } from "react-icons/ri";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
@@ -8,15 +8,15 @@ import useTourist from "../../hooks/useTourist";
 import useTourGuide from "../../hooks/useTourGuide";
 
 const Dashboard = () => {
-  const { logOut, user } = useAuth();
+  const { user } = useAuth();
 
   const [isAdmin] = useAdmin();
   const [isTourist] = useTourist();
   const [isTourGuide] = useTourGuide();
 
-  const handleLogOut = () => {
-    logOut().then();
-  };
+  // const handleLogOut = () => {
+  //   logOut().then();
+  // };
 
   const navLink = isAdmin ? (
     <>
@@ -48,6 +48,11 @@ const Dashboard = () => {
           <FaHouse /> My Profile
         </NavLink>
       </li>
+      <li>
+        <NavLink to="/dashboard/tourist/wishlist">
+          <FaRectangleList /> My Wishlist
+        </NavLink>
+      </li>
     </>
   ) : isTourGuide ? (
     <>
@@ -73,11 +78,11 @@ const Dashboard = () => {
           <RiMenuSearchFill /> All Package
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <button onClick={handleLogOut}>
           <MdOutlineLogout /> Logout
         </button>
-      </li>
+      </li> */}
     </>
   );
 

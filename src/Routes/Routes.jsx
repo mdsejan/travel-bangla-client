@@ -14,6 +14,7 @@ import ManageUsers from "../pages/Dashboard/AdminDashboard/ManageUsers/ManageUse
 import AllPackage from "../pages/AllPackage/AllPackage";
 import AdminRoute from "./AdminRoute";
 import PackageDetails from "../pages/PackageDetails/PackageDetails";
+import TouristProfile from "../pages/Dashboard/TouristDashboard/TouristProfile/TouristProfile";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,7 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
     children: [
+      //Admin Routes
       {
         path: "adminHome",
         element: <AdminHome></AdminHome>,
@@ -81,6 +83,12 @@ const router = createBrowserRouter([
             <ManageUsers></ManageUsers>
           </AdminRoute>
         ),
+      },
+
+      // Tourist Routes
+      {
+        path: "tourist/profile",
+        element: <TouristProfile></TouristProfile>,
       },
     ],
   },

@@ -3,15 +3,18 @@ import { MdAddToPhotos, MdOutlineLogout } from "react-icons/md";
 import { RiMenuSearchFill } from "react-icons/ri";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import useAdmin from "../../hooks/useAdmin";
 
 const Dashboard = () => {
   const { logOut, user } = useAuth();
+
+  const [isAdmin] = useAdmin();
 
   const handleLogOut = () => {
     logOut().then();
   };
 
-  const navLink = (
+  const navLink = isAdmin ? (
     <>
       <li>
         <NavLink to="/dashboard/admin/myProfile">
@@ -31,6 +34,14 @@ const Dashboard = () => {
       <li>
         <NavLink to="/dashboard/manageUsers">
           <FaGear /> Manage Users
+        </NavLink>
+      </li>
+    </>
+  ) : (
+    <>
+      <li>
+        <NavLink to="/dashboard/tourist/profile">
+          <FaHouse /> My Profile
         </NavLink>
       </li>
     </>

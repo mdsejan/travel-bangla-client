@@ -1,16 +1,15 @@
 import useAuth from "../../../../hooks/useAuth";
 
-const MyProfile = () => {
+const TouristProfile = () => {
   const { user } = useAuth();
   return (
     <div>
-      <h2>MyProfile</h2>
-      <p>
+      <h2 className="text-3xl">
         <span>Hi, Welcome </span>
         {user?.displayName ? user.displayName : "Back"}
-      </p>
+      </h2>
     </div>
   );
 };
 
-export default MyProfile;
+export default TouristProfile;

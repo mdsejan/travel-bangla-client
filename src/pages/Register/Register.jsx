@@ -82,10 +82,10 @@ const Register = () => {
         <div className="flex bg-white dark-bg-yellow  rounded-lg shadow-sm border w-full max-w-5xl">
           {/* Left Column for Image */}
           <div
-            className="w-1/2 bg-[#ACD27A] p-12 hidden md:block bg-no-repeat bg-bottom bg-cover"
+            className="w-1/2 bg-[#7BAB9A] p-12 hidden md:block bg-no-repeat bg-bottom bg-cover"
             style={{
               backgroundImage:
-                "url('https://scontent.fdac22-1.fna.fbcdn.net/v/t1.6435-9/40368635_667904946909536_7554065879810441216_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeENykljzhho37ScmTaG6hkUJAKAB-nAu2wkAoAH6cC7bMtE2o06G1e8JVp3CvD2l7jAgYVyCrhm437Hen7j-pv6&_nc_ohc=A_XXOF1GergAX_V_SG0&_nc_ht=scontent.fdac22-1.fna&oh=00_AfCQ9utQls-WFcfIllt16m7B-LJjjxMhi8LIL9-sWRbxgg&oe=65888C72')",
+                "url('https://i.ibb.co/cNkf3gQ/register-bg.jpg')",
             }}
           >
             <h1 className="text-3xl font-semibold text-center mb-1 text-white ">

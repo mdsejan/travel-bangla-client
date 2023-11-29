@@ -86,10 +86,9 @@ const Login = () => {
         <div className="flex bg-white dark-bg-yellow  rounded-lg shadow-sm border w-full max-w-4xl">
           {/* Left Column for Image */}
           <div
-            className="w-1/2 bg-[#ACD27A] p-12 hidden md:block bg-no-repeat bg-bottom bg-cover "
+            className="w-1/2 bg-[#7BAB9A] p-12 hidden md:block bg-no-repeat bg-bottom bg-cover "
             style={{
-              backgroundImage:
-                "url('https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/339576696_670809898182846_6006032646846495184_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFWMuevwqHjcyTmegZFH2X7FR576dFmARoVHnvp0WYBGmtaV_wLz4rWwq2rzGOCPucx3bfHqBjuE3MHF58HSymL&_nc_ohc=MLQNZVBeEWUAX9PDGGM&_nc_ht=scontent.fdac22-1.fna&oh=00_AfCr4EhebZaV7MDoFXXTT5tQRLOU6vBkQgrkBZLqkdH9oA&oe=65663233')",
+              backgroundImage: "url('https://i.ibb.co/bXWqR4W/nature-bg.jpg')",
             }}
           >
             <h1 className="text-3xl font-semibold text-center mb-1 text-white ">
@@ -109,7 +108,7 @@ const Login = () => {
               <div className="text-center">
                 <button
                   onClick={handleGoogleLogin}
-                  className="btn btn-outline w-full mt-4 capitalize font-bold text-[#ACD27A] hover:bg-[#ACD27A]"
+                  className="btn btn-outline w-full mt-4 capitalize font-bold text-[#7BAB9A] hover:bg-[#7BAB9A]"
                 >
                   <img
                     className="w-4"
@@ -184,7 +183,7 @@ const Login = () => {
                     className={`flex items-center justify-center w-full text-white py-2 px-4 rounded-lg ${
                       disabled
                         ? "bg-gray-300 hover:bg-gray-300 "
-                        : "bg-[#ACD27A] hover:bg-[#ACD27A]"
+                        : "bg-[#7BAB9A] hover:bg-[#7BAB9A]"
                     } focus:outline-none`}
                   >
                     Login
@@ -194,7 +193,7 @@ const Login = () => {
               <div>
                 <p className="mt-8 text-md">
                   New to this website? Please &nbsp;
-                  <Link to="/register" className="text-[#ACD27A] font-bold">
+                  <Link to="/register" className="text-[#7BAB9A] font-bold">
                     Register
                   </Link>
                 </p>

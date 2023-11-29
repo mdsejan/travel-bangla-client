@@ -75,21 +75,23 @@ const MyWishlist = () => {
                 </td>
 
                 <th>
-                  <button
-                    onClick={() => handleDelete(item._id)}
-                    className={` text-white py-2 px-4 rounded text-xs mr-4 bg-red-500 hover:bg-orange-700
-                    `}
-                  >
-                    Delete
-                  </button>
-                  <Link to={`/packageDetails/${item.packageId}`}>
+                  <div className="flex justify-between md:justify-start">
                     <button
-                      className={` text-white py-2 px-4 rounded text-xs mr-4 bg-[#7BAB9A] hover:bg-black
+                      onClick={() => handleDelete(item._id)}
+                      className={` text-white py-2 px-4 rounded text-xs mr-4 bg-red-500 hover:bg-orange-700
                     `}
                     >
-                      View Details
+                      Delete
                     </button>
-                  </Link>
+                    <Link to={`/packageDetails/${item.packageId}`}>
+                      <button
+                        className={` text-white py-2 px-4 rounded text-xs mr-4 bg-[#7BAB9A] hover:bg-black
+                    `}
+                      >
+                        View Details
+                      </button>
+                    </Link>
+                  </div>
                 </th>
               </tr>
             ))}

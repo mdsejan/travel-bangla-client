@@ -85,7 +85,7 @@ const PackageDetails = () => {
         }).then((result) => {
           if (result.isConfirmed) {
             // Redirect to the My Bookings page
-            navigate("/mybookings");
+            navigate("/dashboard/tourist/myBookings");
           }
         });
       }

@@ -1,6 +1,7 @@
 import { FaGear, FaHouse, FaRectangleList } from "react-icons/fa6";
 import { MdAddToPhotos } from "react-icons/md";
 import { RiMenuSearchFill } from "react-icons/ri";
+import { TiThListOutline } from "react-icons/ti";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import useAdmin from "../../hooks/useAdmin";
@@ -51,6 +52,11 @@ const Dashboard = () => {
       <li>
         <NavLink to="/dashboard/tourist/wishlist">
           <FaRectangleList /> My Wishlist
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/dashboard/tourist/myBookings">
+          <TiThListOutline /> My Bookings
         </NavLink>
       </li>
     </>

@@ -18,6 +18,7 @@ import TouristProfile from "../pages/Dashboard/TouristDashboard/TouristProfile/T
 import TourGuideProfile from "../pages/Dashboard/TourGuideDashboard/TourGuideProfile/TourGuideProfile";
 import MyWishlist from "../pages/Dashboard/TouristDashboard/MyWishlist/MyWishlist";
 import PackageByType from "../pages/PackageByType/PackageByType";
+import MyBookings from "../pages/Dashboard/TouristDashboard/MyBookings/MyBookings";
 
 const router = createBrowserRouter([
   {
@@ -101,6 +102,11 @@ const router = createBrowserRouter([
       {
         path: "tourist/wishlist",
         element: <MyWishlist></MyWishlist>,
+      },
+
+      {
+        path: "tourist/myBookings",
+        element: <MyBookings></MyBookings>,
       },
 
       // TourGuide Routes

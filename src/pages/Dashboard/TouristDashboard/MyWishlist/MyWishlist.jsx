@@ -41,62 +41,70 @@ const MyWishlist = () => {
         </h2>
       </div>
       <div className="overflow-x-auto max-w-screen-lg mx-auto bg-white p-6 rounded-b-lg">
-        <table className="table">
-          {/* head */}
-          <thead className="bg-[#7BAB9A] text-lg text-white font-bold">
-            <tr>
-              <th>#</th>
-              <th>Image</th>
-              <th>Name</th>
-              <th>Price</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {wishlist?.map((item, index) => (
-              <tr key={item._id}>
-                <th>{index + 1}</th>
+        {wishlist?.length > 0 ? (
+          <table className="table">
+            {/* head */}
+            <thead className="bg-[#7BAB9A] text-lg text-white font-bold">
+              <tr>
+                <th>#</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {wishlist?.map((item, index) => (
+                <tr key={item._id}>
+                  <th>{index + 1}</th>
 
-                <th>
-                  <div className=" w-16 h-16 md:w-24 md:h-24">
-                    <img
-                      className="w-full h-full object-cover"
-                      src={item.packageImg}
-                      alt={item.packageName}
-                    />
-                  </div>
-                </th>
+                  <th>
+                    <div className=" w-16 h-16 md:w-24 md:h-24">
+                      <img
+                        className="w-full h-full object-cover"
+                        src={item.packageImg}
+                        alt={item.packageName}
+                      />
+                    </div>
+                  </th>
 
-                <td>
-                  <div className="font-bold">{item.packageName}</div>
-                </td>
-                <td>
-                  <h3 className="font-semibold text-lg">{item.packagePrice}</h3>
-                </td>
+                  <td>
+                    <div className="font-bold">{item.packageName}</div>
+                  </td>
+                  <td>
+                    <h3 className="font-semibold text-lg">
+                      {item.packagePrice}
+                    </h3>
+                  </td>
 
-                <th>
-                  <div className="flex justify-between md:justify-start">
-                    <button
-                      onClick={() => handleDelete(item._id)}
-                      className={` text-white py-2 px-4 rounded text-xs mr-4 bg-red-500 hover:bg-orange-700
-                    `}
-                    >
-                      Delete
-                    </button>
-                    <Link to={`/packageDetails/${item.packageId}`}>
+                  <th>
+                    <div className="flex justify-between md:justify-start">
                       <button
-                        className={` text-white py-2 px-4 rounded text-xs mr-4 bg-[#7BAB9A] hover:bg-black
+                        onClick={() => handleDelete(item._id)}
+                        className={` text-white py-2 px-4 rounded text-xs mr-4 bg-red-500 hover:bg-orange-700
                     `}
                       >
-                        View Details
+                        Delete
                       </button>
-                    </Link>
-                  </div>
-                </th>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                      <Link to={`/packageDetails/${item.packageId}`}>
+                        <button
+                          className={` text-white py-2 px-4 rounded text-xs mr-4 bg-[#7BAB9A] hover:bg-black
+                    `}
+                        >
+                          View Details
+                        </button>
+                      </Link>
+                    </div>
+                  </th>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          <div className="text-xl font-semibold text-red-600">
+            <h2>No Wishlist Found</h2>
+          </div>
+        )}
       </div>
     </>
   );

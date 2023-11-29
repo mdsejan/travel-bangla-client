@@ -16,6 +16,9 @@ const TourType = () => {
   return (
     <Container>
       <div className="text-center">
+        <h4 className="text-xl text-[#7BAB9A] font-salsa font-semibold mb-2">
+          See package by
+        </h4>
         <h2 className="text-5xl font-salsa font-semibold mb-16">Tour Types</h2>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pb-20">

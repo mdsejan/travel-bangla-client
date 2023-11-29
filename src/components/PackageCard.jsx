@@ -41,14 +41,14 @@ const PackageCard = ({ item }) => {
         />
         <div className="absolute top-4 right-4">
           <button onClick={handleWishlist}>
-            <FaHeart className="text-black text-3xl" />
+            <FaHeart className="text-red-500 text-3xl" />
           </button>
         </div>
       </figure>
       <div className="card-body">
         <div className="flex justify-between mb-4">
           <div className="badge badge-outline">{tourType}</div>
-          <h2 className="text-xl font-bold text-[#21664e]">{price}</h2>
+          <h2 className="text-xl font-bold text-[#21664e]">$ {price}</h2>
         </div>
         <h2 className="card-title">{tripTitle}</h2>
         <p>{aboutTour?.slice(0, 100)}</p>

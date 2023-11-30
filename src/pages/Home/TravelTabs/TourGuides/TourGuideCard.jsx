@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const TourGuideCard = ({ tourGuide }) => {
   console.log(tourGuide);
@@ -61,9 +62,11 @@ const TourGuideCard = ({ tourGuide }) => {
         </li>
       </ul>
       <div className="p-4 border-t mx-8 mt-2">
-        <button className="w-1/2 block mx-auto rounded bg-gray-900 hover:bg-[#7CAB9B] font-semibold text-white px-6 py-2">
-          Details
-        </button>
+        <Link to={`/tourGuide/${tourGuide.email}`}>
+          <button className="w-1/2 block mx-auto rounded bg-gray-900 hover:bg-[#7CAB9B] font-semibold text-white px-6 py-2">
+            Details
+          </button>
+        </Link>
       </div>
     </div>
   );

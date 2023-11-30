@@ -20,6 +20,7 @@ import MyWishlist from "../pages/Dashboard/TouristDashboard/MyWishlist/MyWishlis
 import PackageByType from "../pages/PackageByType/PackageByType";
 import MyBookings from "../pages/Dashboard/TouristDashboard/MyBookings/MyBookings";
 import MyAssignedTours from "../pages/Dashboard/TourGuideDashboard/MyAssignedTours/MyAssignedTours";
+import AboutTourGuide from "../pages/AboutTourGuide/AboutTourGuide";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "packageDetails/:id",
         element: <PackageDetails></PackageDetails>,
+      },
+      {
+        path: "tourGuide/:email",
+        element: <AboutTourGuide></AboutTourGuide>,
       },
 
       {

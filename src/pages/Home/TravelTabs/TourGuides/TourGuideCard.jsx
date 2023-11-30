@@ -1,19 +1,27 @@
 import PropTypes from "prop-types";
 
 const TourGuideCard = ({ tourGuide }) => {
+  console.log(tourGuide);
   return (
     <div className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-md border rounded-lg text-gray-900">
-      <div className="rounded-t-lg h-32 overflow-hidden">
+      <div className="rounded-t-lg h-36 overflow-hidden">
         <img
-          className="object-cover object-top w-full"
-          src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt="Mountain"
+          className="object-cover object-bottom w-full"
+          src={
+            tourGuide?.coverImg
+              ? tourGuide?.coverImg
+              : "https://i.pinimg.com/564x/ef/2c/9f/ef2c9f322d8f4680f1a5392b7d19053f.jpg"
+          }
         />
       </div>
-      <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
+      <div className="mx-auto w-32 h-32 relative -mt-16 border-4 bg-slate-100 border-white rounded-full overflow-hidden">
         <img
-          className="object-cover object-center h-32"
-          src="https://i.pinimg.com/564x/2c/bb/0e/2cbb0ee6c1c55b1041642128c902dadd.jpg"
+          className="w-full h-full object-cover object-center"
+          src={
+            tourGuide?.profileImg
+              ? tourGuide?.profileImg
+              : "https://i.pinimg.com/564x/2c/bb/0e/2cbb0ee6c1c55b1041642128c902dadd.jpg"
+          }
         />
       </div>
       <div className="text-center mt-2">

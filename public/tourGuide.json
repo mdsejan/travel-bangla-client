@@ -1,9 +1,14 @@
 [
   {
     "name": "Rahim Ahmed",
-    "profile_picture": "https://example.com/rahim_ahmed_profile.jpg",
+    "email": "rahim@gmail.com",
+    "role": "tourGuide",
+    "profileImg": "https://i.pinimg.com/564x/1b/3d/2b/1b3d2bc763b0650a5e19646cfda80270.jpg",
+    "coverImg": "https://i.ibb.co/MSNvY3B/tour1.jpg",
+    "about": "I am passionate about showcasing the rich cultural heritage of Bangladesh to visitors from around the world. With years of experience and in-depth knowledge of historical sites, I aim to provide memorable and informative tours.",
+    "languages": ["Bengali", "English", "Hindi"],
     "contact_details": {
-      "email": "rahim@mail.com",
+      "ContactEmail": "rahim@mail.com",
       "phone": "+880123456789",
       "address": "Dhaka, Bangladesh"
     },
@@ -30,23 +35,58 @@
       {
         "position": "Lead Tour Guide",
         "company": "Discover Bangladesh Tours",
-        "years": "2016 - Present",
-        "responsibilities": [
-          "Conducting guided tours to historical sites",
-          "Showcasing cultural heritage",
-          "Arranging customized itineraries",
-          "Providing insights into local traditions"
-        ]
+        "years": "2016 - Present"
       },
       {
         "position": "Tour Coordinator",
         "company": "Heritage Explorations",
-        "years": "2014 - 2016",
-        "responsibilities": [
-          "Coordinating logistics for group tours",
-          "Assisting tourists and guides",
-          "Organizing cultural events"
-        ]
+        "years": "2014 - 2016"
+      }
+    ]
+  },
+  {
+    "name": "Farid Uddin",
+    "email": "farid@gmail.com",
+    "role": "tourGuide",
+    "profileImg": "https://i.pinimg.com/564x/d8/21/a5/d821a5913b80e08cd34693b756dcf6e3.jpg",
+    "coverImg": "https://i.pinimg.com/564x/77/dd/d3/77ddd3d90b79f46b855464660b4d02b8.jpg",
+    "about": "I am dedicated to showcasing the beauty and diversity of Bangladesh's landscapes and culture to travelers worldwide. With extensive knowledge of local traditions and natural wonders, I offer unique and immersive experiences.",
+    "languages": ["Bengali", "English", "Spanish"],
+    "contact_details": {
+      "ContactEmail": "farid@gmail.com",
+      "phone": "+880987654321",
+      "address": "Chittagong, Bangladesh"
+    },
+    "education": [
+      {
+        "degree": "Master's in Tourism Management",
+        "school": "Chittagong University",
+        "year": 2015
+      },
+      {
+        "degree": "Certification in Eco-Tourism",
+        "school": "Bangladesh Ecotourism Society",
+        "year": 2016
+      }
+    ],
+    "skills": [
+      "Multilingual Guide",
+      "Environmental Conservation Advocacy",
+      "Adventure Tourism",
+      "Community Engagement",
+      "Tour Planning and Logistics",
+      "Cross-Cultural Communication"
+    ],
+    "work_experience": [
+      {
+        "position": "Senior Tour Guide",
+        "company": "Explore Bangladesh Adventures",
+        "years": "2017 - Present"
+      },
+      {
+        "position": "Assistant Tour Manager",
+        "company": "Green Trails Expeditions",
+        "years": "2015 - 2017"
       }
     ]
   }

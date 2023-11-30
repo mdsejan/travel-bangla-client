@@ -27,13 +27,14 @@ const Register = () => {
       const loggedUser = result.user;
       console.log(loggedUser);
       updateProfile(auth.currentUser, {
-        displayName: data.fullName,
-        photoURL: data.imgLink,
+        displayName: data?.fullName,
+        photoURL: data?.imgLink,
       }).then(() => {
         // Create user entry in the database
         const userInfo = {
-          name: data.fullName,
-          email: data.email,
+          name: data?.fullName,
+          email: data?.email,
+          profileImg: data?.imgLink,
           role: "tourist",
         };
 
@@ -56,6 +57,7 @@ const Register = () => {
         const userInfo = {
           email: result.user?.email,
           name: result.user?.displayName,
+          profileImg: result.user?.photoURL,
           role: "tourist",
         };
         axiosPublic.post("/user", userInfo).then((res) => {

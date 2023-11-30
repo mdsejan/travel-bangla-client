@@ -3,7 +3,7 @@
     "featureImage": "https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/382230705_2306930852824300_1011948376688470307_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGb7UDjRWfUBAb1SyAToH_Mf3ebvjBJQPh_d5u-MElA-NPqueQZhINc8Qpzm1hUdacP8DGmTtDQT056btE9HN6q&_nc_ohc=9Wtu7uAS1b0AX8WSeFA&_nc_ht=scontent.fdac22-1.fna&oh=00_AfA0aFrb84EKoGE3hYYR18BmIq_8ADF5_CacCU4t42zR_Q&oe=6566888D",
     "tourType": "Adventure",
     "tripTitle": "Exploring Sundarbans",
-    "price": "$500",
+    "price": "500",
     "gallery": [
       "https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/383210611_7019326054786877_5905963973424838863_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFZVDbw3FYbIecOdOwO7l3m34VRfbwHFG3fhVF9vAcUbV-3kaVrv5iJIxbYgezqiWiUAFjOtRUdwtiLmE6NyQZE&_nc_ohc=UJjfu9GiU1sAX89eAAa&_nc_ht=scontent.fdac22-1.fna&oh=00_AfBhu8ds5bM9pDgdmGpClQ4RIhXV31eW_KT3fc6MCXvpvg&oe=65670F89",
       "https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/391652041_2318086848375367_6772367264683930281_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG2-L7aID88mH6lXs6PLIi5KyAZ53tO9-YrIBnne0735tK4FXUZKsi79NhAdQwHQ-MEzgA1COCpbYuECzHXyXPG&_nc_ohc=R_RH5dW9xtQAX8qT8VQ&_nc_ht=scontent.fdac22-1.fna&oh=00_AfA0GYVr-G8vrAVbThChIcDgunbUFwG32AQt-lDqp29xMg&oe=65682978",
@@ -39,7 +39,7 @@
     "featureImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Lalbag_Fort_Front.jpg/1024px-Lalbag_Fort_Front.jpg",
     "tourType": "Cultural",
     "tripTitle": "Historical Dhaka",
-    "price": "$300",
+    "price": "300",
     "gallery": [
       "https://www.touristplaces.com.bd/images/pp/5/p111499.jpg",
       "dhaka2.jpg",
@@ -70,11 +70,16 @@
     ]
   },
   {
-    "featureImage": "spot3.jpg",
+    "featureImage": "https://i.ibb.co/hfzjGTb/images.jpg",
     "tourType": "Nature",
     "tripTitle": "Charming Cox's Bazar",
-    "price": "$700",
-    "gallery": ["cox1.jpg", "cox2.jpg", "cox3.jpg"],
+    "price": "700",
+    "gallery": [
+      "https://i.ibb.co/sbWbcXF/16637359-d9b6-492e-9fa1-b9509bc3e542.jpg",
+      "https://i.ibb.co/LSkrXBx/DSC06310.jpg",
+      "https://i.ibb.co/S5k9MMY/cocxbazar1.png",
+      "https://i.ibb.co/SsrhCXJ/cocxbazar2.png"
+    ],
     "aboutTour": "Experience the serenity of Cox's Bazar, boasting the world's longest natural sea beach. Engage in thrilling water sports, witness mesmerizing sunsets, and enjoy the tranquility of the Bay of Bengal.",
     "tourPlan": [
       {
@@ -100,11 +105,16 @@
     ]
   },
   {
-    "featureImage": "spot4.jpg",
+    "featureImage": "https://i.ibb.co/DVR3Jgf/bandarban1.jpg",
     "tourType": "Adventure",
     "tripTitle": "Trekking in Bandarban",
-    "price": "$600",
-    "gallery": ["bandarban1.jpg", "bandarban2.jpg", "bandarban3.jpg"],
+    "price": "600",
+    "gallery": [
+      "https://i.ibb.co/0JXf3bc/bandarban2.jpg",
+      "https://i.ibb.co/bQKQzFF/bandarban3.jpg",
+      "https://i.ibb.co/Qrg7f66/bandarban4.jpg",
+      "https://i.ibb.co/c3zHVb3/bandarban5.jpg"
+    ],
     "aboutTour": "Embark on thrilling treks through the hill tracts of Bandarban. Visit tribal villages, experience stunning landscapes, and discover the unique cultural heritage of the region.",
     "tourPlan": [
       {
@@ -133,7 +143,7 @@
     "featureImage": "spot5.jpg",
     "tourType": "Historical",
     "tripTitle": "Mystic Mahasthangarh",
-    "price": "$400",
+    "price": "400",
     "gallery": [
       "mahasthangarh1.jpg",
       "mahasthangarh2.jpg",

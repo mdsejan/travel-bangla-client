@@ -22,6 +22,8 @@ import MyBookings from "../pages/Dashboard/TouristDashboard/MyBookings/MyBooking
 import MyAssignedTours from "../pages/Dashboard/TourGuideDashboard/MyAssignedTours/MyAssignedTours";
 import AboutTourGuide from "../pages/AboutTourGuide/AboutTourGuide";
 import Error from "../pages/Shared/Error/Error";
+import TouristStorys from "../pages/TouristStorys/TouristStorys";
+import TouristStoryDetails from "../pages/TouristStorys/TouristStoryDetails";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +60,14 @@ const router = createBrowserRouter([
       {
         path: "contact-us",
         element: <ContactUs></ContactUs>,
+      },
+      {
+        path: "tourist-storys",
+        element: <TouristStorys></TouristStorys>,
+      },
+      {
+        path: "tourist-story/:id",
+        element: <TouristStoryDetails></TouristStoryDetails>,
       },
     ],
   },

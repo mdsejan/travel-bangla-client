@@ -10,6 +10,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { useState } from "react";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
+import TourGuideCard from "../Home/TravelTabs/TourGuides/TourGuideCard";
 
 const PackageDetails = () => {
   const { id } = useParams();
@@ -262,6 +263,25 @@ const PackageDetails = () => {
                 </div>
               </form>
             </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-center mt-20">
+            {/* <h4 className="text-xl text-[#7BAB9A] font-salsa font-semibold mb-2">
+              Package Details
+            </h4> */}
+            <h2 className="text-5xl font-salsa font-semibold underline">
+              Tour Guides
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 py-16 lg:py-10">
+            {tourGuides?.slice(0, 4).map((tourGuide) => (
+              <TourGuideCard
+                key={tourGuide._id}
+                tourGuide={tourGuide}
+              ></TourGuideCard>
+            ))}
           </div>
         </div>
       </Container>

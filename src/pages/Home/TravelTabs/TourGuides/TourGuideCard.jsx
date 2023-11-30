@@ -1,6 +1,8 @@
-const TourGuideCard = () => {
+import PropTypes from "prop-types";
+
+const TourGuideCard = ({ tourGuide }) => {
   return (
-    <div className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900">
+    <div className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-md border rounded-lg text-gray-900">
       <div className="rounded-t-lg h-32 overflow-hidden">
         <img
           className="object-cover object-top w-full"
@@ -11,13 +13,12 @@ const TourGuideCard = () => {
       <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
         <img
           className="object-cover object-center h-32"
-          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          alt="Woman looking front"
+          src="https://i.pinimg.com/564x/2c/bb/0e/2cbb0ee6c1c55b1041642128c902dadd.jpg"
         />
       </div>
       <div className="text-center mt-2">
-        <h2 className="font-semibold">Sarah Smith</h2>
-        <p className="text-gray-500">Freelance Web Designer</p>
+        <h2 className="font-semibold">{tourGuide.name}</h2>
+        <p className="text-gray-500">Tour Guide</p>
       </div>
       <ul className="py-4 mt-2 text-gray-700 flex items-center justify-around">
         <li className="flex flex-col items-center justify-around">
@@ -58,6 +59,10 @@ const TourGuideCard = () => {
       </div>
     </div>
   );
+};
+
+TourGuideCard.propTypes = {
+  tourGuide: PropTypes.object,
 };
 
 export default TourGuideCard;

@@ -66,7 +66,7 @@ const router = createBrowserRouter([
         element: <TouristStorys></TouristStorys>,
       },
       {
-        path: "tourist-story/:id",
+        path: "touristStory/:id",
         element: <TouristStoryDetails></TouristStoryDetails>,
       },
     ],

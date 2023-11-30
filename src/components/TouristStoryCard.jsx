@@ -12,7 +12,7 @@ const TouristStoryCard = ({ item }) => {
   } = item || {};
   return (
     <div className="rounded overflow-hidden shadow border flex flex-col">
-      <Link to={`/tourist-story/${_id}`}>
+      <Link to={`/touristStory/${_id}`}>
         <div>
           <img
             className="w-full h-[13rem] object-cover"

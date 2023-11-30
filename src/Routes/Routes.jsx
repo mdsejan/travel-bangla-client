@@ -21,10 +21,12 @@ import PackageByType from "../pages/PackageByType/PackageByType";
 import MyBookings from "../pages/Dashboard/TouristDashboard/MyBookings/MyBookings";
 import MyAssignedTours from "../pages/Dashboard/TourGuideDashboard/MyAssignedTours/MyAssignedTours";
 import AboutTourGuide from "../pages/AboutTourGuide/AboutTourGuide";
+import Error from "../pages/Shared/Error/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    errorElement: <Error></Error>,
     element: <MainLayout></MainLayout>,
     children: [
       {
@@ -62,6 +64,7 @@ const router = createBrowserRouter([
 
   {
     path: "dashboard",
+    errorElement: <Error></Error>,
     element: (
       <PrivateRoute>
         <Dashboard></Dashboard>
@@ -129,10 +132,12 @@ const router = createBrowserRouter([
 
   {
     path: "login",
+    errorElement: <Error></Error>,
     element: <Login></Login>,
   },
   {
     path: "register",
+    errorElement: <Error></Error>,
     element: <Register></Register>,
   },
 ]);

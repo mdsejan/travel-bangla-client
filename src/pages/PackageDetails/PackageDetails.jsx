@@ -68,7 +68,7 @@ const PackageDetails = () => {
         status: "inReview",
       };
 
-      console.log(bookItem);
+      // console.log(bookItem);
 
       const menuRes = await axiosSecure.post("/booking", bookItem);
       console.log(menuRes.data);

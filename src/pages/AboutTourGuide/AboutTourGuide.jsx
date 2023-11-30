@@ -26,10 +26,14 @@ const AboutTourGuide = () => {
     work_experience,
   } = tourGuide || {};
 
-  console.log(education);
-
   return (
     <div className="px-4 py-7 lg:py-16">
+      <div className="text-center py-6 mb-9">
+        <h4 className="text-xl text-[#7BAB9A] font-salsa font-semibold mb-2">
+          About
+        </h4>
+        <h2 className="text-5xl font-salsa font-semibold">Tour Guide</h2>
+      </div>
       <div className="bg-white md:mx-auto rounded shadow w-full lg:w-[80%] overflow-hidden">
         <div
           className="h-48 bg-gradient-to-r from-cyan-500 to-blue-500 bg-center bg-cover"

@@ -26,8 +26,6 @@ const TourGuideProfile = () => {
     work_experience,
   } = tourGuide || {};
 
-  console.log(education);
-
   return (
     <div className="bg-white md:mx-auto rounded shadow w-full lg:w-[80%] overflow-hidden">
       <div

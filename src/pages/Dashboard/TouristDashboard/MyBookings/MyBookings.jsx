@@ -125,7 +125,7 @@ const MyBookings = () => {
                         </button>
                       )}
 
-                      {bookingsCount > 3 ? (
+                      {bookingsCount > 3 && item.status === "Accepted" ? (
                         <button
                           className={` text-white py-2 px-4 rounded text-xs mr-4 bg-[#7BAB9A] hover:bg-black
                     `}
@@ -135,7 +135,7 @@ const MyBookings = () => {
                       ) : (
                         <button
                           disabled
-                          className="flex items-center justify-center w-full text-white py-2 px-4 rounded-lg bg-gray-300 hover:bg-gray-300"
+                          className=" text-white py-2 px-4 rounded text-xs mr-4 bg-gray-300 hover:bg-gray-300"
                         >
                           Apply
                         </button>

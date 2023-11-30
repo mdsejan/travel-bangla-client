@@ -67,6 +67,11 @@ const Dashboard = () => {
           <FaHouse /> My Profile
         </NavLink>
       </li>
+      <li>
+        <NavLink to="/dashboard/tourGuide/assignedTours">
+          <FaRectangleList /> My Assigned Tours
+        </NavLink>
+      </li>
     </>
   ) : (
     ""

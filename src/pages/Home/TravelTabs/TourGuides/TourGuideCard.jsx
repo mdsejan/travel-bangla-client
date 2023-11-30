@@ -10,7 +10,7 @@ const TourGuideCard = ({ tourGuide }) => {
           src={
             tourGuide?.coverImg
               ? tourGuide?.coverImg
-              : "https://i.pinimg.com/564x/ef/2c/9f/ef2c9f322d8f4680f1a5392b7d19053f.jpg"
+              : "https://i.pinimg.com/564x/b9/f4/e2/b9f4e2e402fe32ec295b00cedc1e71dc.jpg"
           }
         />
       </div>

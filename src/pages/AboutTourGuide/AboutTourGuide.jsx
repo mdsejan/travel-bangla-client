@@ -26,6 +26,13 @@ const AboutTourGuide = () => {
     work_experience,
   } = tourGuide || {};
 
+  const styles = {
+    backgroundImage: `url("${
+      coverImg ||
+      "https://i.pinimg.com/564x/b9/f4/e2/b9f4e2e402fe32ec295b00cedc1e71dc.jpg"
+    }")`,
+  };
+
   return (
     <div className="px-4 py-7 lg:py-16">
       <div className="text-center py-6 mb-9">
@@ -37,9 +44,7 @@ const AboutTourGuide = () => {
       <div className="bg-white md:mx-auto rounded shadow w-full lg:w-[80%] overflow-hidden">
         <div
           className="h-48 bg-gradient-to-r from-cyan-500 to-blue-500 bg-center bg-cover"
-          style={{
-            backgroundImage: `url("${coverImg}")`,
-          }}
+          style={styles}
         />
 
         <div className="px-5 py-2 flex flex-col gap-3 pb-6">

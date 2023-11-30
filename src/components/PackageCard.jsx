@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import toast from "react-hot-toast";
 import useAuth from "../hooks/useAuth";
+import Swal from "sweetalert2";
 
 const PackageCard = ({ item }) => {
   const { _id, featureImage, tripTitle, tourType, aboutTour, price } =
@@ -11,25 +12,42 @@ const PackageCard = ({ item }) => {
 
   const axiosPublic = useAxiosPublic();
   const { user } = useAuth();
+  const navigate = useNavigate();
 
   const handleWishlist = () => {
-    const toastId = toast.loading("adding ...");
-    const wishPackage = {
-      packageImg: featureImage,
-      packageName: tripTitle,
-      packagePrice: price,
-      packageId: _id,
-      userEmail: user.email,
-    };
+    if (user) {
+      const toastId = toast.loading("adding ...");
+      const wishPackage = {
+        packageImg: featureImage,
+        packageName: tripTitle,
+        packagePrice: price,
+        packageId: _id,
+        userEmail: user.email,
+      };
 
-    axiosPublic.post("/wishList", wishPackage).then((res) => {
-      if (res.data.insertedId) {
-        toast.success("Package added to wishlist", {
-          id: toastId,
-          duration: 3000,
-        });
-      }
-    });
+      axiosPublic.post("/wishList", wishPackage).then((res) => {
+        if (res.data.insertedId) {
+          toast.success("Package added to wishlist", {
+            id: toastId,
+            duration: 3000,
+          });
+        }
+      });
+    } else {
+      Swal.fire({
+        title: "You are not Logged In",
+        text: "please login to add to wishList",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, Login",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          navigate("/login", { state: location.pathname });
+        }
+      });
+    }
   };
   return (
     <div className="card bg-base-100 border shadow rounded-md relative">

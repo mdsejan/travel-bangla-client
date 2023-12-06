@@ -89,5 +89,98 @@
         "years": "2015 - 2017"
       }
     ]
+  },
+  {
+    "name": "Rafiqul Haque",
+    "email": "rafiqul@gmail.com",
+    "role": "tourGuide",
+    "profileImg": "https://i.pinimg.com/564x/01/81/eb/0181eb226cc62629138793a3e2379caa.jpg",
+    "coverImg": "https://i.pinimg.com/564x/2e/03/db/2e03db4cb9464926040976d34cb1d731.jpg",
+    "contact_details": {
+      "ContactEmail": "rafiqul@gmail.com",
+      "phone": "+8801122334455",
+      "address": "Sylhet, Bangladesh"
+    },
+    "about": "I am deeply passionate about revealing the hidden gems of Bangladesh to curious travelers. My goal is to offer authentic and personalized experiences, sharing stories of cultural richness and natural beauty.",
+    "languages": ["Bengali", "English", "French"],
+
+    "education": [
+      {
+        "degree": "Bachelor's in History",
+        "school": "Shahjalal University of Science and Technology",
+        "year": 2013
+      },
+      {
+        "degree": "Certification in Guiding Techniques",
+        "school": "Sylhet Tourism Academy",
+        "year": 2014
+      }
+    ],
+    "skills": [
+      "Storytelling",
+      "Specialized Cultural Tours",
+      "Heritage Interpretation",
+      "Adventure Planning",
+      "Language Interpretation",
+      "Customer Engagement"
+    ],
+    "work_experience": [
+      {
+        "position": "Cultural Tour Specialist",
+        "company": "Enchanting Sylhet Tours",
+        "years": "2015 - Present"
+      },
+      {
+        "position": "Heritage Site Guide",
+        "company": "Sylhet Heritage Trails",
+        "years": "2013 - 2015"
+      }
+    ]
+  },
+  {
+    "name": "Abdul Mannan",
+    "email": "mannan@gmail.com",
+    "role": "tourGuide",
+    "profileImg": "https://i.pinimg.com/564x/89/a4/35/89a4357bd614ea039ac4651d6ae5d0d1.jpg",
+    "coverImg": "https://i.pinimg.com/564x/b9/f4/e2/b9f4e2e402fe32ec295b00cedc1e71dc.jpg",
+    "contact_details": {
+      "ContactEmail": "ayesha.rahman@mail.com",
+      "phone": "+8809988776655",
+      "address": "Cox's Bazar, Bangladesh"
+    },
+    "about": "My passion lies in introducing visitors to the mesmerizing beauty of Cox's Bazar and its surroundings. I strive to provide enriching experiences, blending natural wonders with local traditions.",
+    "languages": ["Bengali", "English", "Chinese"],
+    "education": [
+      {
+        "degree": "Bachelor's in Geography",
+        "school": "Cox's Bazar University",
+        "year": 2016
+      },
+      {
+        "degree": "Certification in Coastal Tourism",
+        "school": "Cox's Bazar Coastal Association",
+        "year": 2017
+      }
+    ],
+    "skills": [
+      "Coastal Tourism Expertise",
+      "Beachside Activities Planning",
+      "Local Art and Craft Showcase",
+      "Cross-Cultural Communication",
+      "Geographical Insights",
+      "Hospitality Management"
+    ],
+    "work_experience": [
+      {
+        "position": "Coastal Tour Specialist",
+        "company": "Cox's Bazar Adventures",
+        "years": "2018 - Present"
+      },
+      {
+        "position": "Geography Research Assistant",
+        "company": "Cox's Bazar Coastal Research Institute",
+        "years": "2016 - 2018"
+      }
+    ]
   }
 ]

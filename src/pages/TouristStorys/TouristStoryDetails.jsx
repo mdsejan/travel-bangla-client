@@ -21,12 +21,21 @@ const TouristStoryDetails = () => {
     <Container>
       <div className="text-center py-12">
         <h4 className="text-xl text-[#7BAB9A] font-salsa font-semibold mb-2">
-          Story
+          Tourist Story
         </h4>
-        {/* <h2 className="text-5xl font-salsa font-semibold">{story_Title}</h2> */}
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-salsa font-semibold">
+          {tourStory[0]?.story_Title}
+        </h2>
+        <div className="w-full h-[10rem] md:h-[15rem] lg:h-[25rem] rounded-md mt-9">
+          <img
+            src={tourStory[0]?.Feature_image}
+            alt={`banner`}
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
-      <div className="min-h-[60vh] max-w-screen-md mx-auto mb-14">
-        {/* <p className="text-lg">{story}</p> */}
+      <div className="min-h-[60vh] max-w-screen-lg text-justify mx-auto mb-14">
+        <p className="md:text-lg">{tourStory[0]?.story}</p>
       </div>
     </Container>
   );

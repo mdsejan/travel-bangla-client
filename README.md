@@ -32,4 +32,4 @@ Welcome to TravelBangla - the ultimate online platform offering an immersive jou
 
 ## Server Side Repo
 
-[Check Server Side Repo ](https://github.com/programming-hero-web-course1/b8a12-server-side-mdsejan)
+[Check Server Side Repo ](https://github.com/mdsejan/travel-bangla-server)

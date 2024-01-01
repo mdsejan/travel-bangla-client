@@ -27,6 +27,11 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
+        <NavLink to="/tourist-storys" className="mr-2">
+          All Storys
+        </NavLink>
+      </li>
+      <li>
         <NavLink to="/contact-us" className="mr-2">
           Contact Us
         </NavLink>

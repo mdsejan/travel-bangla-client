@@ -14,7 +14,6 @@ const TouristStoryDetails = () => {
       return res.data;
     },
   });
-  console.log(tourStory[0]);
 
   //   const { story_Title, story } = tourStory[0];
   return (

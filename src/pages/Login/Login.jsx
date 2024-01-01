@@ -34,6 +34,19 @@ const Login = () => {
     }
   };
 
+  const handleDemoLogin = (email, password) => {
+    const toastId = toast.loading("Logging in ...");
+
+    signInUser(email, password)
+      .then(() => {
+        toast.success("Logged in", { id: toastId });
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        toast.error(error.message, { id: toastId });
+      });
+  };
+
   const handleLogin = (e) => {
     e.preventDefault();
 
@@ -118,6 +131,42 @@ const Login = () => {
                   />
                   <span>Login With Google</span>
                 </button>
+                <div className="divider my-10">Login As Demo User</div>
+                <div className="flex flex-wrap justify-center  gap-2 ">
+                  <button
+                    onClick={() =>
+                      handleDemoLogin(
+                        import.meta.env.VITE_TOURIST_EMAIL,
+                        import.meta.env.VITE_DEMO_PASS
+                      )
+                    }
+                    className={`flex items-center justify-center  text-white py-2 px-4 rounded-sm bg-[#4E7FFA] hover:bg-[#7398FB] focus:outline-none`}
+                  >
+                    Tourist
+                  </button>
+                  <button
+                    onClick={() =>
+                      handleDemoLogin(
+                        import.meta.env.VITE_TOUR_GUIDE_EMAIL,
+                        import.meta.env.VITE_DEMO_PASS
+                      )
+                    }
+                    className={`flex items-center justify-center  text-white py-2 px-4 rounded-sm bg-[#6F3FF8] hover:bg-[#9370FA] focus:outline-none`}
+                  >
+                    Tour Guide
+                  </button>
+                  <button
+                    onClick={() =>
+                      handleDemoLogin(
+                        import.meta.env.VITE_ADMIN_EMAIL,
+                        import.meta.env.VITE_DEMO_PASS
+                      )
+                    }
+                    className={`flex items-center justify-center  text-white py-2 px-4 rounded-sm bg-[#F14F65] hover:bg-[#F47787] focus:outline-none`}
+                  >
+                    Admin
+                  </button>
+                </div>
                 <div className="divider my-10">OR</div>
               </div>
               <form onSubmit={handleLogin}>

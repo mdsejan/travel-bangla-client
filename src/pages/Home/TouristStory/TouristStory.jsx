@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Container from "../../../components/Container";
 import TouristStoryCard from "../../../components/TouristStoryCard";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
@@ -27,13 +27,13 @@ const TouristStory = () => {
           <TouristStoryCard key={item._id} item={item}></TouristStoryCard>
         ))}
       </div>
-      <div className="text-center mt-10 mb-9">
+      {/* <div className="text-center mt-10 mb-9">
         <Link to="/tourist-storys">
           <button className="bg-[#7CAB9B] hover:bg-[#7CAB9B] text-white text-md font-semibold py-2 px-8 rounded">
             All Storys
           </button>
         </Link>
-      </div>
+      </div> */}
     </Container>
   );
 };

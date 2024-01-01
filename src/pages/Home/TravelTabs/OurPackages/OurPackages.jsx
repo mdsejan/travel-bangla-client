@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import PackageCard from "../../../../components/PackageCard";
 import usePackages from "../../../../hooks/usePackages";
 
@@ -11,13 +11,13 @@ const OurPackages = () => {
           <PackageCard key={item._id} item={item}></PackageCard>
         ))}
       </div>
-      <div className="text-center mt-10">
+      {/* <div className="text-center mt-10">
         <Link to="/all-package">
           <button className="bg-[#7CAB9B] hover:bg-[#7CAB9B] text-white text-md font-semibold py-2 px-8 rounded">
             All Packages
           </button>
         </Link>
-      </div>
+      </div> */}
     </>
   );
 };

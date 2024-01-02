@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const TouristStoryCard = ({ item }) => {
   const {
@@ -10,8 +11,15 @@ const TouristStoryCard = ({ item }) => {
     tourist_name,
     tourist_image,
   } = item || {};
+
   return (
-    <div className="rounded overflow-hidden shadow border flex flex-col">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+      whileHover={{ scale: 1.03 }}
+      className="rounded overflow-hidden shadow border flex flex-col"
+    >
       <Link to={`/touristStory/${_id}`}>
         <div>
           <img
@@ -39,7 +47,7 @@ const TouristStoryCard = ({ item }) => {
           </div>
         </div>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 

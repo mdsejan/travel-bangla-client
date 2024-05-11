@@ -1,4 +1,4 @@
-import aboutimg from "../../../../assets/home/about_img.png";
+import aboutimg from "../../../../assets/home/about_img.webp";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { MdAirplaneTicket } from "react-icons/md";
 import Container from "../../../../components/Container";

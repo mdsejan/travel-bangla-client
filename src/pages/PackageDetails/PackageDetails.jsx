@@ -11,6 +11,7 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import TourGuideCard from "../Home/TravelTabs/TourGuides/TourGuideCard";
+import GoToTop from "../../components/GoToTop";
 
 const PackageDetails = () => {
   const { id } = useParams();
@@ -284,6 +285,7 @@ const PackageDetails = () => {
             ))}
           </div>
         </div>
+        <GoToTop />
       </Container>
     </div>
   );

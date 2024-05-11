@@ -7,6 +7,7 @@ import Overview from "./TravelTabs/Overview/Overview";
 import OurPackages from "./TravelTabs/OurPackages/OurPackages";
 import TourGuides from "./TravelTabs/TourGuides/TourGuides";
 import BannerTwo from "./Banner/BannerTwo";
+import GoToTop from "../../components/GoToTop";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       {/* <TravelTabs></TravelTabs> */}
       <TourType></TourType>
       <TouristStory></TouristStory>
+      <GoToTop />
     </div>
   );
 };

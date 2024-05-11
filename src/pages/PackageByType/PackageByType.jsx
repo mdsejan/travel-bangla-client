@@ -3,6 +3,7 @@ import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { useParams } from "react-router-dom";
 import PackageCard from "../../components/PackageCard";
 import Container from "../../components/Container";
+import GoToTop from "../../components/GoToTop";
 
 const PackageByType = () => {
   const axiosPublic = useAxiosPublic();
@@ -40,6 +41,7 @@ const PackageByType = () => {
           Show All Package
         </button>
       </div> */}
+      <GoToTop />
     </Container>
   );
 };

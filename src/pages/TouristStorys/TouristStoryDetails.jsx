@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import Container from "../../components/Container";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { useParams } from "react-router-dom";
+import GoToTop from "../../components/GoToTop";
 
 const TouristStoryDetails = () => {
   const axiosPublic = useAxiosPublic();
@@ -36,6 +37,7 @@ const TouristStoryDetails = () => {
       <div className="min-h-[60vh] max-w-screen-lg text-justify mx-auto mb-14">
         <p className="md:text-lg">{tourStory[0]?.story}</p>
       </div>
+      <GoToTop />
     </Container>
   );
 };

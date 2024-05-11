@@ -1,4 +1,4 @@
-import bannerImg from "../../../../src/assets/home/bannerbg.jpg";
+import bannerImg from "../../../../src/assets/home/bannerbg.webp";
 import { motion } from "framer-motion";
 
 const BannerTwo = () => {

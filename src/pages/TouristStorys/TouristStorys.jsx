@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import Container from "../../components/Container";
 import TouristStoryCard from "../../components/TouristStoryCard";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
+import GoToTop from "../../components/GoToTop";
 
 const TouristStorys = () => {
   const axiosPublic = useAxiosPublic();
@@ -26,6 +27,7 @@ const TouristStorys = () => {
           <TouristStoryCard key={item._id} item={item}></TouristStoryCard>
         ))}
       </div>
+      <GoToTop />
     </Container>
   );
 };

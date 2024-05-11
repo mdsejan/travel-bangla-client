@@ -2,6 +2,7 @@ import { FaBriefcase, FaUserGraduate } from "react-icons/fa6";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
+import GoToTop from "../../components/GoToTop";
 
 const AboutTourGuide = () => {
   const { email } = useParams();
@@ -156,6 +157,7 @@ const AboutTourGuide = () => {
           </div>
         </div>
       </div>
+      <GoToTop />
     </div>
   );
 };

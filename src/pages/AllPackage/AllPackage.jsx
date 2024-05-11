@@ -1,4 +1,5 @@
 import Container from "../../components/Container";
+import GoToTop from "../../components/GoToTop";
 import PackageCard from "../../components/PackageCard";
 import usePackages from "../../hooks/usePackages";
 
@@ -23,6 +24,7 @@ const AllPackage = () => {
           Show All Package
         </button>
       </div> */}
+      <GoToTop />
     </Container>
   );
 };

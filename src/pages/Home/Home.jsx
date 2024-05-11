@@ -1,11 +1,12 @@
 import { Helmet } from "react-helmet-async";
-import Banner from "./Banner/Banner";
+// import Banner from "./Banner/Banner";
 // import TravelTabs from "./TravelTabs/TravelTabs";
 import TourType from "./TourType/TourType";
 import TouristStory from "./TouristStory/TouristStory";
 import Overview from "./TravelTabs/Overview/Overview";
 import OurPackages from "./TravelTabs/OurPackages/OurPackages";
 import TourGuides from "./TravelTabs/TourGuides/TourGuides";
+import BannerTwo from "./Banner/BannerTwo";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
       <Helmet>
         <title>TravelBangla - Explore, Experience, Enjoy</title>
       </Helmet>
-      <Banner />
+      <BannerTwo />
       <Overview></Overview>
       <OurPackages></OurPackages>
       <TourGuides></TourGuides>

@@ -5,6 +5,7 @@ import useAxiosPublic from "../hooks/useAxiosPublic";
 import toast from "react-hot-toast";
 import useAuth from "../hooks/useAuth";
 import Swal from "sweetalert2";
+import { motion } from "framer-motion";
 
 const PackageCard = ({ item }) => {
   const { _id, featureImage, tripTitle, tourType, aboutTour, price } =
@@ -50,7 +51,13 @@ const PackageCard = ({ item }) => {
     }
   };
   return (
-    <div className="card bg-base-100 border shadow rounded-md relative">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+      whileHover={{ scale: 1.03 }}
+      className="card bg-base-100 border shadow rounded-md relative"
+    >
       <figure className="relative">
         <img
           src={featureImage}
@@ -78,7 +85,7 @@ const PackageCard = ({ item }) => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

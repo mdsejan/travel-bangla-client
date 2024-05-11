@@ -1,9 +1,16 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const TourGuideCard = ({ tourGuide }) => {
   return (
-    <div className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-md border rounded-lg text-gray-900">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+      whileHover={{ scale: 1.03 }}
+      className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-md border rounded-lg text-gray-900"
+    >
       <div className="rounded-t-lg h-36 overflow-hidden">
         <img
           className="object-cover object-bottom w-full"
@@ -36,7 +43,7 @@ const TourGuideCard = ({ tourGuide }) => {
           </button>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
